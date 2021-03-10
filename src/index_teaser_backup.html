@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <title>Luna Academy</title>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!-- MDB-->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+
+    <script>
+      $(document).ready(function() {
+        $("#updateme").click(function() {
+          data = JSON.stringify({
+            name: $('#name').val(),
+            email: $('#email').val()
+          })
+
+          $.ajax({
+            type: "POST",
+            dataType : "json",
+            contentType: "application/json; charset=utf-8",
+            url: "https://la-apac-devopsassets-d-api.azurewebsites.net/api/signup",
+            data: data,
+            success: function(a){
+                $(".sign-upform").hide();
+                $(".sign-thankyou").show(); 
+            },
+            error: function(e){
+                alert("An error occured while proccessing your request")
+            }
+          });
+        });
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="container">
+          <!-- Navigation -->
+          <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="navbar-brand">
+              <a href="index.html"><img src="assets/img/LUNA_logo.png" alt="Luna Academy Logo" class="img-fluid logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+              <span class="navbar-toggler-icon">
+                <i class="fa fa-bars"></i>
+              </span>
+            </button>
+
+            <div id="NavMenu" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <ul class="nav navbar-nav navbar-right ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="index.html#solutions" onclick="closeNav()">SOLUTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="index.html#about" onclick="closeNav()">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="index.html#signup" onclick="closeNav()">SIGN UP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="index.html#partners" onclick="closeNav()">PARTNERS</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="hero landing">
+        <img src="assets/img/hero_illustration.png" class="img-fluid hero-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xs-12 spacer"></div>
+            <div class="col-md-7 col-xs-12 hero-text">
+              <div class="text h1">The Future <br>of upskilling in <br>the Philippines <br>is here</div>
+              <div class="btn-container">
+                <a href="#about">
+                  <div type="button" class="btn btn-lg btn-outline-light">Learn more</div>
+                </a>
+                <a href="#signup">
+                  <div type="button" class="btn btn-lg btn-light">Sign up for early access</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-wrapper">
+          <a href="#features" class="btn-floating btn-lg btn-light arrow-down"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </section><!-- /hero -->
+
+      <section class="solutions" id="solutions">
+        <div class="container">
+          <h2 class="h4 title align-center">SOLUTIONS</h2>
+          <div class="row">
+            <div class="col-md">
+              <div class="card-light">
+                <div class="icon-wrapper">
+                  <img src="assets/img/ic_worldclasscourses.png" class="icon">
+                </div>
+                <div class="card-title">World Class Online Courses and Industry Programs</div>
+                <p>Vast array of self-paced online short courses and industry-grade microcredential programs from our consortium of global platinum technology partners, top tier local education institutions, specialist corporate affiliates and Philippine government agencies</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card-light">
+                <div class="icon-wrapper">
+                  <img src="assets/img/ic_handson.png" class="icon">
+                </div>
+                <div class="card-title">Hands On Labs</div>
+                <p>Live and cloud-based lab environments with pre-installed software applications and tools that are aligned to each specific technology course without the need for manual setups and hardware limitations. This allows learners to perform practical hands-on lab exercises straight through the browser and be graded by mentors ahead of course completion - anytime, anywhere.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card-light">
+                <div class="icon-wrapper">
+                  <img src="assets/img/ic_blendedlearning.png" class="icon">
+                </div>
+                <div class="card-title">Blended Learning<br>Experience</div>
+                <p>Innovative platform integrated in the platform that allows learners to schedule on-demand technology course experts and industry practitioners from the pool of our blended learning mentor partners locally and across the APAC region for one-on-one remote mentoring sessions for guidance on hands on lab activities and course modules. Our blended learning mentors also facilitate our relevant webinars integrated on specific course or program as additional value to learners.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md">
+              <div class="card-light">
+                <div class="icon-wrapper">
+                  <img src="assets/img/ic_credentials.png" class="icon">
+                </div>
+                <div class="card-title">Digital<br>Credentials</div>
+                <p>The credentialing feature is the way we celebrate learner course achievements and successful program completions. These are blockchain authenticated digital certificates and badges that are issued upon accomplishment of designated hands on lab activities and courses that can be shared and added on learners' LinkedIn profile and social media network.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card-light">
+                <div class="icon-wrapper">
+                  <img src="assets/img/ic_certification.png" class="icon">
+                </div>
+                <div class="card-title">Industry<br>Certifications</div>
+                <p>Industry Certifications are bundled official exam vouchers being given to each learner under specific programs that are usually being awarded by our global technology partners such as Microsoft, UiPATH, AWS, Google Cloud, Alibaba Cloud, Tableau and more.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card-light">
+                <div class="icon-wrapper">
+                  <img src="assets/img/ic_job.png" class="icon">
+                </div>
+                <div class="card-title">Job and Career<br>Linkages</div>
+                <p>The ultimate goal for upskilling and reskilling is to achieve higher employability and quality of livelihood in today's economy. Our major integration partnerships with local and regional job classifieds and recruitment platforms enable us to help and connect learners to career opportunities as we prepare the next generation of Filipino workforce towards future-ready jobs and the modern workplace.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- /solutions -->
+
+      <section class="about-luna-academy" id="about">
+        <div class="container">
+          <div class="row about">
+            <div class="col-md-5 col-sm-12 title">
+              <div class="title-wrapper">
+                <h1 class="title">ABOUT LUNA ACADEMY</h1>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12 content">
+              <p>A customized online educational platform that provides high-quality, industry-grade and widely accessible future-ready skills training with globally recognized digital credentialing tailored to the local Philippine market.</p>
+              <p>Luna Academy is the brainchild of a joint venture between the top EdTech company in the Philippines, CloudSwyft and one of the largest business congolomerates in the country, DITO CME Holdings.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row mission-vision">
+            <div class="col-md">
+              <h3 class="sub-title">VISION</h3>
+              <div class="text-content">To empower all Filipino learners with the future-ready skills and credentials necessary to thrive and be successful in the 21st century and post-pandemic economy</div>
+            </div>
+            <div class="col-md">
+              <h3 class="sub-title">MISSION</h3>
+              <div class="text-content">To provide high-quality, relevant and cost-effective future-ready skills training and world class digital credentials through our customized online education platform tailored to the local Philippine market</div>
+            </div>
+          </div>
+          <div id="signup" class="spacer"> </div>
+          <div class="card signup">
+            <div class="row">
+              <div class="col-md">
+                <div class="sub-title">STAY IN THE LOOP</div>
+                <h1 class="tag-title">Sign up for an early access</h3>
+                  <div class="text-content">Sign up below to receive updates on our beta launch this 2021.
+                    Early users will receive a FREE course of your choice.</div>
+              </div>
+              <div class="col-3 sign-up-img">
+                <img src="assets/img/img_calendar.png" class="img-fluid">
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="sign-upform">
+              <div class="row">
+                <div class="col-md col-sm-12">
+                  <div class="md-form md-outline form-lg">
+                    <input id="name" type="text" class="form-control form-control-lg">
+                    <label for="name" class="form-label">Name</label>
+                  </div>
+                </div>
+                <div class="col-md col-sm-12 col-adjust">
+                  <div class="md-form md-outline form-lg">
+                    <input id="email" type="text" class="form-control form-control-lg">
+                    <label for="email" class="form-label">Email address</label>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-adjust">
+                  <button class="btn btn-lg btn-primary" id="updateme">Update me</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <small>By submitting your email you agree to receive information about our events and updates from LUNA ACADEMY.</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row sign-thankyou">
+              <div class="col">
+                Thank you for signing up! Kindly check your email.
+              </div>
+            </div>
+          </div>
+          <div class="row whats-coming">
+            <h4 class="title">WHAT'S COMING</h3>
+              <div class="col-md">Over <strong>100 Online Industry</strong> <br>and <strong>Diploma Programs</strong></div>
+              <div class="col-md">Over <strong>1,000 <br>Online Courses</strong></div>
+          </div>
+        </div>
+      </section><!-- /about-luna-academy -->
+
+      <section class="partners" id="partners">
+        <div class="container">
+          <h2 class="h4 title align-center">PARTNERS</h2>
+          <div class="row">
+            <div class="col-md-5 col-xs-12 title-container">
+              Platinum technology partners
+            </div>
+            <div class="col-md-7 col-xs-12 logo-container">
+              <div>
+                <img src="assets/img/microsft.png" class="icon">
+                <img src="assets/img/aws.png" class="icon">
+                <img src="assets/img/tableau.png" class="icon">
+              </div>
+              <div>
+                <img src="assets/img/google.png">
+                <img src="assets/img/alibaba_cloud.png" class="icon">
+                <img src="assets/img/alibaba_group.png" class="icon">
+              </div>
+              <div>
+                <img src="assets/img/salesforce.png" class="icon">
+                <img src="assets/img/UI_Path.png" class="icon">
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row">
+                        <div class="col-md-5 col-xs-12 title-container">
+                            Government Partners
+                        </div>
+                        <div class="col-md-7 col-xs-12 logo-container government">
+                            <div>   
+                                <img src="assets/img/CHED.png" class="icon">
+                                <img src="assets/img/DOST.png" class="icon">
+                                <img src="assets/img/TESDA.png" class="icon">
+                                <img src="assets/img/DICT.png" class="icon">
+                                <img src="assets/img/DAP.png" class="icon">
+                                <img src="assets/img/DOLE.png" class="icon">
+                            </div>
+                            <div>
+                                <img src="assets/img/DepEd.png" class="icon">
+                            </div>
+                        </div>
+                    </div> -->
+          <!-- /Government Partners -->
+          <!-- <div class="row">
+                        <div class="col-md-5 col-xs-12 title-container">
+                            University Partners
+                        </div>
+                        <div class="col-md-7 col-xs-12 logo-container university">
+                            <img src="assets/img/Ateneo.png" class="icon">
+                            <img src="assets/img/UAP.png" class="icon">
+                            <img src="assets/img/LaSalle.png" class="icon">
+    
+                            <img src="assets/img/Ederun.png" class="icon">
+                            <img src="assets/img/MAPUA.png" class="icon">
+                            <img src="assets/img/FEUTech.png" class="icon">
+                        </div>
+                    </div> -->
+          <!-- /University Partners -->
+          <div class="row">
+            <div class="col-md-5 col-xs-12 title-container">
+              Corporate Affiliates
+            </div>
+            <div class="col-md-7 col-xs-12 logo-container corporate">
+              <img src="assets/img/UDENNA.png" class="icon">
+              <img src="assets/img/IBPAP.png" class="icon">
+              <img src="assets/img/CCAP.png" class="icon">
+              <img src="assets/img/GoNegosyo.png" class="icon">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-xs-12 title-container">
+              Job Classified Site Partners
+            </div>
+            <div class="col-md-7 col-xs-12 logo-container jobs">
+              <img src="assets/img/JobStreet.png" class="icon">
+              <img src="assets/img/recruitday.png" class="icon">
+              <!-- <img src="assets/img/LinkedIn.png" class="icon">
+                            <img src="assets/img/JobsDB.png" class="icon"> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-xs-12 title-container">
+              Telco Partners
+            </div>
+            <div class="col-md-7 col-xs-12 logo-container no-border">
+              <img src="assets/img/DITO.png" class="icon">
+            </div>
+          </div>
+        </div>
+      </section><!-- /partners -->
+    </main>
+    <footer>
+      <div class="container footer-content">
+        <div class="row">
+          <div class="col-md logo-wrapper">
+            <img src="assets/img/LUNA_Academy_light.png">
+            <ul class="list-unstyled list-inline logo">
+              <li><img src="assets/img/DITOCME.png"></li>
+              <li><img src="assets/img/CloudSwyft.png"></li>
+            </ul>
+          </div>
+          <div class="col-md nav-link">
+            <ul class="list-unstyled list-inline">
+              <li>PRIVACY POLICY</li>
+              <li>TERMS & CONDITIONS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container copy-right">
+        All rights reserved LUNA ACADEMY 2020. Copyright.
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>

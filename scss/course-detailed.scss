@@ -1,0 +1,304 @@
+/** HOME **/
+@import "variables";
+
+
+/** -- Page -- **/
+.course-detailed.page { 
+    margin-bottom: 40px;
+}
+.course-detailed {  
+    &.hero-banner-info {
+        height: 570px; 
+ 
+        @media only screen and (max-width: 991px) and (min-width: 491px)  {
+            height: 475px; 
+        } 
+        
+        @media (max-width: 490px) {
+            height: 725px;  
+
+            background-color: #4915C2; 
+
+            .row {
+                margin-right: 0;
+                margin-left: 0; 
+            }
+        }
+
+    } 
+    .inner-banner {
+        height: 400px;
+        color: #fff;
+        
+        background-image: url('../img/hero-bg-course-detailed.png'); 
+        background-repeat: no-repeat;
+        background-position: center center; 
+        background-size: cover;
+
+        .badge {
+            background: #310E82;
+            border-radius: 40px;
+            padding: 15px 25px;
+            font-weight: normal;
+            font-size: 18px;
+
+            .icon {
+                margin-right: 10px;
+            }
+        }
+
+        .title {
+            color: #fff;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 64px;
+            margin-bottom: 42px;
+        }
+
+        .breadcrumb-wrapper {
+            color: #fff;
+        }
+
+        .cta-panel { 
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 50px;
+            justify-content: flex-end;
+
+            .cta-wrapper {
+                text-align: right;
+            }
+
+            .price {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 18px;
+            }
+        }
+
+        
+
+        .stats {  
+
+            small {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: #717580;
+            }
+ 
+            .text-value {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                color: #3E3F42;
+                padding: 15px 0 0; 
+            }
+ 
+            .ico-range {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                margin-bottom: 10px;
+            }
+        }
+
+        .stats-wrapper {
+            .card {
+                padding: 24px;
+                height: 145px;
+            }  
+
+            .date-range-wrapper { 
+                .text-value {
+                    margin-top:20px;
+                }
+            }
+        }
+
+        .stats-menu {
+            .card {
+                padding:20px;
+                margin-top:30px; 
+                flex-direction: inherit; 
+                color: #3E3F42;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                align-items: center;
+
+                .icon {
+                    margin-right: 10px
+                }
+            }
+        }
+
+        @media only screen and (max-width: 991px) and (min-width: 491px)  {
+            .title {
+                font-size: 33px; 
+                line-height: 45px;
+                margin-bottom: 20px;
+            } 
+
+            .course-detailed .inner-banner .badge {
+                padding: 10px 20px;
+            }
+
+            .cta-panel {
+                margin-bottom: 20px;
+            }
+
+            .stats-wrapper {
+                .card {
+                    padding: 15px; 
+                    height: 135px;
+                }  
+                
+                .text-value {
+                    font-size: 14px;
+                    line-height: 18px;  
+                }
+                .date-range-wrapper { 
+                    .col {
+                        padding-right: 0; 
+                    }
+
+                    .ico-range {
+                        padding-right: 5px;
+                        padding-left: 5px; 
+                    }
+
+                    .text-value {
+                        font-size: 14px;
+                        line-height: 18px; 
+                        margin-top: 10px;  
+                    }
+                }
+            }
+
+            .stats-menu {
+                .card {
+                    padding:15px;
+                    margin-top:15px;  
+                    min-height: 70px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        @media (max-width: 490px) {
+            .title {
+                font-size: 33px; 
+                line-height: 45px;
+                margin-bottom: 0; 
+            } 
+
+            .cta-panel {
+                margin-bottom: 20px;
+
+                .cta-wrapper {
+                    width: 100%; 
+                }
+            }
+
+            .stats-wrapper {
+                .card {
+                    padding: 15px; 
+                    height: 90px;
+                    margin-bottom: 15px; 
+                }  
+
+                .text-value {
+                    font-size: 14px;
+                    line-height: 18px;  
+                    margin-top: 10px  !important; 
+                    padding-top: 0;  
+                }
+            } 
+
+            .stats-menu {
+                .card {
+                    padding:15px;
+                    margin-top:15px;  
+                    min-height: 70px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .sub-title {
+        margin: 30px 0 18px 0; 
+    }
+
+    .sidepanel { 
+        a {
+            font-weight: bold;
+        }
+
+        ul {
+            margin: 0;  
+            padding: 0 15px;
+
+            li {
+                padding: 5px 0;
+               
+                label, 
+                &:hover { 
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+            border-radius: 5px;
+            padding: 20px 15px;
+        }
+    }
+
+    .link-center-right {
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-end; 
+    }    
+
+    .btn-link {
+        color: $app-primary; 
+        font-weight: bold;
+
+        a {
+            color: $app-primary; 
+        }
+    }
+
+    .price-section,
+    .cta-section {
+        font-size: 24px;
+        font-weight: 500; 
+        display: flex; 
+        align-items: center;
+    }
+  
+    .cta-section {
+        justify-content: flex-end; 
+
+        .btn {
+            margin-bottom: 0
+        }
+    }
+
+    /** FORMS **/
+    .sort-input {
+        width: 190px;
+    }
+}
+

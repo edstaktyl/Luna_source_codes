@@ -1,0 +1,514 @@
+/** HOME **/
+@import "variables";
+
+.home {
+    .wrapper { 
+        background: #F9FDFF; 
+    }
+
+    .title { 
+        font-size: 40px;
+        margin-bottom:34px; 
+    }
+
+    .sub-title {
+        color: #fff;
+    }
+
+    .inner-banner {
+
+        .no-banner {
+            .breadcrumb-wrapper {
+                color: $app-primary;
+            }
+        }
+        
+    } 
+    
+}
+
+/** -- Hero Banner -- **/
+.hero-banner {
+    .arrow-wrapper {
+        position: absolute;
+        bottom: -24px;
+        width: 100%; 
+        text-align: center;
+        display: flex; 
+        justify-content: center;
+        
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+    } 
+    
+    .arrow-down {
+        font-size: 1.2rem; 
+        display: inline-block; 
+        background: #FCFCFC !important; 
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.302621);
+        z-index: 100; 
+        color: #4915C2; 
+    }
+
+    .control-btn {
+        background: rgba(255, 255, 255, 0.2);;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 48px;
+        width: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+}
+
+.hero {
+    &.landing {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom right;
+        height: 688px;
+        max-height: 688px;
+        color: #fff;
+        position: relative;
+        display: flex; 
+
+        @media (max-width: 767px) {  
+            height: 480px;
+            max-height: 480px;
+            display: initial; 
+            text-align: center;
+
+            img {
+                max-height: 260px;
+            }
+
+            .text-wrapper {
+                text-align: left;
+                margin: 0 1rem;
+                font-size: 24px;
+
+                .hero-text {
+                    margin-top: 0; 
+
+                    .btn {
+                        margin-bottom: 30px;
+                    } 
+                }
+
+                .h1 {
+                    font-size: 24px !important;
+                    line-height: initial !important;
+                }
+            }
+        }
+ 
+        &.slide-1 {
+            background: linear-gradient(180deg, #4915C2 0%, #7236FF 100%);
+        }
+
+        &.slide-2 {
+            background: linear-gradient(180deg, #E65B09 0%, #FDA94E 100%); 
+        }
+ 
+        .hero-img {
+            position: absolute;
+            bottom: 0;
+            left: 1rem; 
+            max-width: 563px;  
+
+            @media (max-width: 767px) {  
+                display: none; 
+            } 
+            @media (max-width: 1240px) { width: 50%; } 
+        }
+
+        .text-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%; 
+        }
+ 
+        .hero-text {
+            z-index: 20;
+
+            @media (max-width: 490px) { margin-top: 30px; }
+
+            .text {
+                font-size: 48px;
+                max-width: 464px; 
+                font-style: normal;
+                font-weight: 700;
+                line-height: 56px; 
+                color: #FCFCFC;
+
+                @media (max-width: 767px) { 
+                    font-size: 40px; 
+                    line-height: 48px; 
+                    margin-bottom: 20px;  
+                }
+
+                @media (max-width: 991px) { 
+                    font-size: 40px; 
+                    line-height: 48px; 
+                    margin-bottom: 20px; 
+                }
+
+                @media (max-width: 371px) { 
+                    font-size: 32px;
+                    line-height: 44px; 
+                }
+            } 
+        }
+    }
+}
+/** !-- Hero Banner -- **/
+
+/** -- Sections -- **/
+.partners {
+    background: #FCFCFC;
+    padding: 15px;  
+    margin-top:15px;
+
+    .container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+
+        @media (max-width: 991px) { 
+            display: inherit; 
+
+            div {
+                // width: 40%;
+                margin: 10px;
+                display: inline-flex;
+                justify-content: center;
+                align-content: center;
+            }
+        }
+    }
+
+    .partner-logo {
+        max-width: 129px; 
+        max-height: 59px;
+    }
+} 
+
+/** -- Explore Our Programs -- **/
+.explore-our-programs {
+    .section-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #4915C2;
+        padding-bottom: 50px; 
+    }
+
+    @media only screen and (max-width: 1200px) and (min-width: 767px)  {
+        .item-box {
+            .description {
+                font-size: 17px; 
+                line-height: 23px;
+                max-width: 95%;
+            }
+        }
+    }
+}
+
+.short-courses {
+    @media only screen and (max-width: 1200px) and (min-width: 767px)  {
+        .item-box {
+            .description {
+                font-size: 14px;
+                line-height: 18px;
+                max-width: 95%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 767px)  {
+        .col-md-3 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%; 
+        }
+    }
+}
+ 
+.explore-our-programs,
+.short-courses {
+    margin-top: 80px; 
+
+    .title { 
+        font-size: 22px;
+    }
+
+    .link-center-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; 
+    }    
+
+    .btn-link {
+        color: $app-primary; 
+        font-weight: bold;
+
+        a {
+            color: $app-primary; 
+        }
+    }
+}
+
+.item-box {
+    .container-img-bg {
+        img {
+            position: absolute; 
+            right: -8%;
+            margin-top:10px;
+        }
+    } 
+}
+
+
+/** About Luna Academy **/
+.about-luna {
+    background: linear-gradient(180deg, #FC8403 0%, #FC901C 74.2%);
+   
+
+    .about-section {
+        background-image: url(../img/about_img_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+    .about {
+        display: flex;
+        padding: 150px 0 130px; 
+
+        @media (max-width: 991px) { 
+            padding: 75px 0 40px;  
+        }
+
+        .title-wrap { 
+            display: flex;
+            justify-content: flex-end;
+            font-size:40px;
+            font-weight: bold;
+
+            @media (max-width: 490px) {  
+                justify-content: flex-start;
+                text-align: left; 
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 8px;
+            } 
+        } 
+
+       .title-wrapper {
+            justify-content: flex-end;
+            width: 226px;
+            margin-right: 3rem;
+
+            @media (max-width: 767px) {   
+                justify-content: flex-start;
+                width: auto; 
+                margin-right: 0;
+            }
+
+            .sub-title {
+                color: #fff;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 44px;
+                text-align: right;
+                letter-spacing: 1px; 
+            }
+       } 
+
+       .content {
+           font-size: 20px;
+           line-height: 30px; 
+           font-weight: normal; 
+           color: rgba(255, 255, 255, 0.8);
+
+           @media (max-width: 490px) {  
+                font-size: 16px;
+                line-height: 24px;
+           }
+           
+       }
+    }
+
+    .mission-vision {
+        padding-bottom: 130px;
+        color: #fff;  
+
+        @media (max-width: 767px) { 
+            padding-bottom: 60px;
+        }
+
+        .conts {
+            text-align: center; 
+            padding: 0 60px;
+
+            @media (max-width: 767px) { 
+                text-align: left; 
+                padding: 0 1rem; 
+            }
+        }
+         
+        .sub-title {
+            font-weight: 500;
+            font-size: 18px;
+            padding: 15px 0;
+        }
+
+        .text-content {
+            font-size: 14px;
+            line-height: 20px;
+            mix-blend-mode: normal; 
+            color: #fff;
+            opacity: 0.8;
+
+            @media (max-width: 490px) { 
+                font-size: 16px;
+            }
+        } 
+        
+    }
+
+    .how-we-make {
+        border-top: 1px solid #FDB568;
+        padding: 50px 0;
+
+        .title {
+            color: #fff;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px; 
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;  
+            padding: 10px 0;
+            margin: 23px 0; 
+        }
+
+        .card {
+            background: linear-gradient(188.54deg, rgba(255, 148, 0, 1) 12.91%, rgba(254, 136, 0, 1) 94.66%);
+            box-shadow: 40px 40px 100px rgba(29, 24, 63, 0.2); 
+            backdrop-filter: blur(12px);
+
+            border-radius: 10px;
+            border: 1px solid #FFC306; 
+            text-align: center;
+            padding: 25px;
+            color: #fff;
+            height: 165px;
+
+            .text-lg {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 24px; 
+                padding: 20px;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 20px;
+                color:rgba(255, 255, 255, 0.8);
+            }
+
+            @media (max-width: 991px) { 
+                padding: 25px 15px;
+
+                .text-lg {
+                    padding: 20px 0; 
+                }
+
+                .description {
+                    font-size: 14px;
+                }
+
+                margin-bottom: 1rem; 
+            }
+        }
+    }
+}
+
+.luna-academy-edge { 
+    padding: 125px 0;
+
+    .title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #4915C2;
+        padding-bottom: 50px;
+    }
+
+    .card-light {
+        box-shadow: none;
+        background: transparent;
+       
+        .icon-wrapper {
+            height: 70px;
+        } 
+        .icon {
+            width: auto;
+            max-width: 64px;
+            height: auto; 
+        } 
+        
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px; 
+            color: rgba(00, 00, 00, 0.8); 
+        }
+    }
+    .card-title {
+        color: $app-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px; 
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        height: 105px; 
+        border-bottom: 1px solid #FC8403;
+        position: relative; 
+        padding-bottom: 25px 0; 
+
+        &:before {
+            content: '';
+            height: 3px;
+            width: 80px;
+            position: absolute;
+            bottom: 0;
+            background: #FC8403;
+        }
+
+        @media (max-width: 490px) { 
+            height: auto;   
+            padding: 16px 0;
+        } 
+    } 
+}

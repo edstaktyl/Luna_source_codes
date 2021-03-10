@@ -1,0 +1,26 @@
+/** MISC **/
+/** -- Page -- **/
+.misc-page .wrapper {
+  min-height: 100%;
+  background: #F5F5F5; }
+
+.misc-page.error-page {
+  height: 100%; }
+  .misc-page.error-page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .misc-page.error-page h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px; }
+  .misc-page.error-page h3 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px; }
+  .misc-page.error-page .content-wrapper {
+    text-align: center; }
+    .misc-page.error-page .content-wrapper img {
+      max-width: 300px; }
+  .misc-page.error-page .btn-container {
+    margin: 30px 0; }

@@ -1,0 +1,9 @@
+
+@mixin cover-background($img-uri, $background-top, $background-left) {
+    background: url($img-uri) no-repeat unquote($background-top) unquote($background-left);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}  
+ 

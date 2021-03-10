@@ -1,0 +1,40 @@
+/** Imports **/
+/** -- Page -- **/
+.course-marketplace {
+  /** FORMS **/ }
+  .course-marketplace .sidepanel a {
+    font-weight: bold; }
+  .course-marketplace .sidepanel ul {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0; }
+    .course-marketplace .sidepanel ul li {
+      padding: 5px 0; }
+      .course-marketplace .sidepanel ul li label, .course-marketplace .sidepanel ul li:hover {
+        cursor: pointer; }
+  .course-marketplace .title {
+    font-size: 40px;
+    margin-bottom: 34px; }
+  .course-marketplace .link-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .course-marketplace .btn-link {
+    color: #4915C2;
+    font-weight: bold; }
+    .course-marketplace .btn-link a {
+      color: #4915C2; }
+  .course-marketplace .item-box.card-horizontal {
+    height: 120px; }
+  .course-marketplace .sort-input {
+    width: 190px; }
+  .course-marketplace .container-img-bg img {
+    height: 120px;
+    margin-top: 15px;
+    margin-left: 15px; }
+
+@media only screen and (max-width: 1200px) and (min-width: 767px) {
+  .course-marketplace .item-box .description {
+    font-size: 18px;
+    line-height: 22px;
+    height: 70px; } }

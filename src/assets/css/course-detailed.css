@@ -1,0 +1,181 @@
+/** HOME **/
+/** -- Page -- **/
+.course-detailed.page {
+  margin-bottom: 40px; }
+
+.course-detailed {
+  /** FORMS **/ }
+  .course-detailed.hero-banner-info {
+    height: 570px; }
+    @media only screen and (max-width: 991px) and (min-width: 491px) {
+      .course-detailed.hero-banner-info {
+        height: 475px; } }
+    @media (max-width: 490px) {
+      .course-detailed.hero-banner-info {
+        height: 725px;
+        background-color: #4915C2; }
+        .course-detailed.hero-banner-info .row {
+          margin-right: 0;
+          margin-left: 0; } }
+  .course-detailed .inner-banner {
+    height: 400px;
+    color: #fff;
+    background-image: url("../img/hero-bg-course-detailed.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    .course-detailed .inner-banner .badge {
+      background: #310E82;
+      border-radius: 40px;
+      padding: 15px 25px;
+      font-weight: normal;
+      font-size: 18px; }
+      .course-detailed .inner-banner .badge .icon {
+        margin-right: 10px; }
+    .course-detailed .inner-banner .title {
+      color: #fff;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 64px;
+      margin-bottom: 42px; }
+    .course-detailed .inner-banner .breadcrumb-wrapper {
+      color: #fff; }
+    .course-detailed .inner-banner .cta-panel {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 50px;
+      justify-content: flex-end; }
+      .course-detailed .inner-banner .cta-panel .cta-wrapper {
+        text-align: right; }
+      .course-detailed .inner-banner .cta-panel .price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 18px; }
+    .course-detailed .inner-banner .stats small {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #717580; }
+    .course-detailed .inner-banner .stats .text-value {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      color: #3E3F42;
+      padding: 15px 0 0; }
+    .course-detailed .inner-banner .stats .ico-range {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 10px; }
+    .course-detailed .inner-banner .stats-wrapper .card {
+      padding: 24px;
+      height: 145px; }
+    .course-detailed .inner-banner .stats-wrapper .date-range-wrapper .text-value {
+      margin-top: 20px; }
+    .course-detailed .inner-banner .stats-menu .card {
+      padding: 20px;
+      margin-top: 30px;
+      flex-direction: inherit;
+      color: #3E3F42;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      align-items: center; }
+      .course-detailed .inner-banner .stats-menu .card .icon {
+        margin-right: 10px; }
+    @media only screen and (max-width: 991px) and (min-width: 491px) {
+      .course-detailed .inner-banner .title {
+        font-size: 33px;
+        line-height: 45px;
+        margin-bottom: 20px; }
+      .course-detailed .inner-banner .course-detailed .inner-banner .badge {
+        padding: 10px 20px; }
+      .course-detailed .inner-banner .cta-panel {
+        margin-bottom: 20px; }
+      .course-detailed .inner-banner .stats-wrapper .card {
+        padding: 15px;
+        height: 135px; }
+      .course-detailed .inner-banner .stats-wrapper .text-value {
+        font-size: 14px;
+        line-height: 18px; }
+      .course-detailed .inner-banner .stats-wrapper .date-range-wrapper .col {
+        padding-right: 0; }
+      .course-detailed .inner-banner .stats-wrapper .date-range-wrapper .ico-range {
+        padding-right: 5px;
+        padding-left: 5px; }
+      .course-detailed .inner-banner .stats-wrapper .date-range-wrapper .text-value {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 10px; }
+      .course-detailed .inner-banner .stats-menu .card {
+        padding: 15px;
+        margin-top: 15px;
+        min-height: 70px;
+        font-size: 14px;
+        line-height: 20px; } }
+    @media (max-width: 490px) {
+      .course-detailed .inner-banner .title {
+        font-size: 33px;
+        line-height: 45px;
+        margin-bottom: 0; }
+      .course-detailed .inner-banner .cta-panel {
+        margin-bottom: 20px; }
+        .course-detailed .inner-banner .cta-panel .cta-wrapper {
+          width: 100%; }
+      .course-detailed .inner-banner .stats-wrapper .card {
+        padding: 15px;
+        height: 90px;
+        margin-bottom: 15px; }
+      .course-detailed .inner-banner .stats-wrapper .text-value {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 10px  !important;
+        padding-top: 0; }
+      .course-detailed .inner-banner .stats-menu .card {
+        padding: 15px;
+        margin-top: 15px;
+        min-height: 70px;
+        font-size: 14px;
+        line-height: 20px; } }
+  .course-detailed .sub-title {
+    margin: 30px 0 18px 0; }
+  .course-detailed .sidepanel a {
+    font-weight: bold; }
+  .course-detailed .sidepanel ul {
+    margin: 0;
+    padding: 0 15px; }
+    .course-detailed .sidepanel ul li {
+      padding: 5px 0; }
+      .course-detailed .sidepanel ul li label, .course-detailed .sidepanel ul li:hover {
+        cursor: pointer; }
+  .course-detailed .sidepanel .card {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    padding: 20px 15px; }
+  .course-detailed .link-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .course-detailed .btn-link {
+    color: #4915C2;
+    font-weight: bold; }
+    .course-detailed .btn-link a {
+      color: #4915C2; }
+  .course-detailed .price-section,
+  .course-detailed .cta-section {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center; }
+  .course-detailed .cta-section {
+    justify-content: flex-end; }
+    .course-detailed .cta-section .btn {
+      margin-bottom: 0; }
+  .course-detailed .sort-input {
+    width: 190px; }

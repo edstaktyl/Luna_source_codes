@@ -1,0 +1,80 @@
+/** Imports **/
+@import "variables";
+
+
+/** -- Page -- **/
+.course-marketplace { 
+    .sidepanel { 
+        a {
+            font-weight: bold;
+        }
+
+        ul { 
+            list-style: none;
+            margin: 15px 0; 
+            padding: 0;
+
+            li {
+                padding: 5px 0; 
+               
+                label, 
+                &:hover { 
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .title { 
+        font-size: 40px;
+        margin-bottom:34px; 
+    }
+
+    .link-center-right {
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-end; 
+    }    
+
+    .btn-link {
+        color: $app-primary; 
+        font-weight: bold;
+
+        a {
+            color: $app-primary; 
+        }
+    }
+
+    .item-box {
+        &.card-horizontal {
+            height: 120px; 
+        }
+    }
+
+    /** FORMS **/
+    .sort-input { 
+        width: 190px;
+    }
+
+    .container-img-bg { 
+        img {
+            height: 120px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+    }
+}
+
+// Responsive
+
+@media only screen and (max-width: 1200px) and (min-width: 767px)  {
+    .course-marketplace {
+        .item-box {    
+            .description {
+                font-size: 18px;
+                line-height: 22px;
+                height: 70px; 
+            }
+        }
+    }
+}

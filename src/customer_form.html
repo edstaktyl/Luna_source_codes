@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="assets/css/rSlider.min.css">
+    <link rel="stylesheet" href="assets/css/app.css" />
+
+    <script src="assets/js/rSlider.min.js"></script>
+
+    <title>Luna Academy</title>
+
+    </head>
+
+    <body class="inner-page">
+        <main class="inner">
+            <header>
+                <div class="header">
+                    <div class="container">
+                         <!-- Navigation --> 
+                    <nav class="navbar navbar-expand-md navbar-dark">    
+                        <div class="navbar-brand">
+                            <a href="index.html"><img src="assets/img/LUNA_logo.png" alt="Luna Academy Logo" class="img-fluid logo"></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </button>
+    
+                        <div id="NavMenu" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <ul class="nav navbar-nav navbar-right ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="index.html#solutions" onclick="closeNav()">SOLUTIONS</a> 
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="index.html#about" onclick="closeNav()">ABOUT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-item nav-link" href="index.html#signup" onclick="closeNav()">SIGN UP</a>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                            <a class="nav-item nav-link" href="index.html#partners" onclick="closeNav()">PARTNERS</a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    </div>
+                </div>
+            </header>
+            <section class="hero inner-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 text-wrapper">
+                            <div>
+                                <h5 class="sub-title">Start your journey</h5>
+                                <h1 class="title">Express an interest</h1>
+                                <div class="free-label">
+                                    <img src="assets/img/ic_rewards.png" alt="Gift Image" class="img-gift">
+                                    Early learners will receive a  <span> FREE course of your choice</span> 
+                                </div>
+                            </div>
+                             
+                        </div>
+                        <div class="col-md-3"> 
+                            <img src="assets/img/img_express.png" alt="Express an interest Image" class="img-fluid img-banner">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="form-customer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col title-wrapper">
+                            <div class="number">1</div>
+                            <div class="text">Complete your profile</div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <input id="name" type="text" class="form-control form-control-lg">
+                                <label for="name"  class="form-label">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <input id="email" type="text" class="form-control form-control-lg">
+                                <label for="email"  class="form-label">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <input id="input-char-counter1" type="text" length="10" class="form-control form-control-lg">
+                                <label for="input-char-counter1"  class="form-label">Mobile number</label>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <input id="jobtype" type="text" length="10" class="form-control form-control-lg">
+                                <label for="jobtype"  class="form-label">Job Type</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <input id="age" type="text" length="10" class="form-control form-control-lg">
+                                <label for="age"  class="form-label">Age</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <select class="browser-default custom-select form-control form-control-lg">
+                                    <option value="" disabled selected>Gender</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Fenale</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-12">
+                            <div class="md-form md-outline form-lg">
+                                <select class="browser-default custom-select form-control form-control-lg">
+                                    <option value="" disabled selected>Educational status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="md-form md-outline form-lg">
+                                <input id="location" type="text" length="10" class="form-control form-control-lg">
+                                <label for="location"  class="form-label">Location</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="md-form md-outline form-lg">
+                                <select class="browser-default custom-select form-control form-control-lg">
+                                    <option value="" disabled selected>Educational status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- /1 -->
+
+                    <div class="row">
+                        <div class="col title-wrapper">
+                            <div class="number">2</div>
+                            <div class="text-wrapper">
+                                <div class="text">Next, select future-ready skills topics that interests you the most!</div>
+                                <small>Kindly move the slider to your level of proficiency on each topic(s). You can pick as many as you want.</small>
+                            </div> 
+                        </div>
+                    </div> 
+
+                    <div class="slider-group">
+                        <div class="row">
+                            <div class="col sub-title">
+                                Future-Ready Technology Topics 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Cloud Computing
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider1A" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Data Analysis
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider1B" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Data & AI
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider1C" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        DevOps
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider2A" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Robotics Process Automation
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider2B" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Software Development
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider2C" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="slider-group">
+                        <div class="row">
+                            <div class="col-md col-sm-12 col-xs-12 sub-title">
+                                Technology Platforms
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Alibaba Cloud
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider3A" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Amazon Web Services
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider3B" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Google Cloud Platform
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider3C" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Microsoft
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider4A" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Salesforce
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider4B" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Tableau
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider4C" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="slider-group">
+                        <div class="row">
+                            <div class="col sub-title">
+                                General Industry Topics
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Accounting & Finance
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider5A" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Accounting & Finance
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider5B" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Digital Marketing
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider5C" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        E-commerce
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider5D" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Engineering
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider5E" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Entrepreneurship
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12 ">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider6A" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Healthcare
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider6B" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Hospitality and Culinary
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider6C" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Language & Humanities
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider6D" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md col-sm-12 col-xs-12 col-label">
+                                        Multimedia & Design Thinking
+                                    </div>
+                                    <div class="col-md col-sm-12 col-xs-12">
+                                        <div class="slider-container">
+                                            <input type="text" id="slider6E" class="slider" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /2 -->
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <div class="sub-title">
+                                Here comes the reward! You get to pick ONE of our Future-Ready Skills courses you can take for FREE as we launch this 2021! You will be notified!
+                            </div>
+                          
+                        </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Azure Cloud Fundamentals</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Artificial Intelligence Fundamentals</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Introduction to Python Programming</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Designing & Implementing an Azure AI Solution</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Fundamentals of Deep Learning for AI</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: An Introduction to Data Science</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Desiging & Implementing a Data Science Solution on Azure</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Introduction to Data Analysis for Absolute Beginners</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Data Analysis Fundamentals Using Microsoft Excel</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Future Ready: Data Visualization Fundamentals for Absolute Beginners</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft DMicrosoft Future Ready: Fundamentals of DevOps Practicesynamics 365 Fundamentals</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="item-box">
+                                <p>Microsoft Dynamics 365 Fundamentals</p>
+                                <div class="btn btn-sm btn-disable" disabled>Coming soon!</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- /3 -->
+                    <hr> 
+                    <div class="row">
+                        <div class="col-md flex-vcenter">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="agree">
+                                <label class="custom-control-label" for="agree">I hereby agree to the <span class="highlight">Data Privacy Policy</span></label>
+                            </div>
+                        </div>
+                        <div class="col-md align-right">
+                            <button class="btn btn-primary" id="updateme">Update me</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+
+                </div>
+            </section><!-- /form -->
+        </main>
+        <footer> 
+            <div class="container footer-content">
+                <div class="row">
+                    <div class="col-md logo-wrapper">
+                        <img src="assets/img/LUNA_Academy_light.png">
+                        <ul class="list-unstyled list-inline logo">
+                            <li><img src="assets/img/DITOCME.png"></li>
+                            <li><img src="assets/img/CloudSwyft.png"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md nav-link">
+                        <ul class="list-unstyled list-inline">
+                            <li>PRIVACY POLICY</li>
+                            <li>TERMS & CONDITIONS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container copy-right">
+                All rights reserved LUNA ACADEMY 2020. Copyright.
+            </div>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- MDB-->
+        <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+        
+        <script type="text/javascript" src="assets/js/script.js"></script>
+
+        <!-- Slider -->
+        <script>
+
+            (function () {
+                'use strict';
+
+                var init = function () {    
+                    var slider1A = new rSlider({
+                        target: '#slider1A',
+                        values: [0, 1, 2],
+                        range: false,
+                        step: [3], 
+                        set: [0],
+                        tooltip: false,
+                        labels: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });  
+                    var slider1B = new rSlider({
+                        target: '#slider1B',
+                        values: [0, 1, 2],
+                        range: false,
+                        step: [3], 
+                        set: [1],
+                        tooltip: false,
+                        labels: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });  
+                    var slider1C = new rSlider({
+                        target: '#slider1C',
+                        values: [0, 1, 2],
+                        range: false,
+                        step: [3], 
+                        set: [1],
+                        tooltip: false,
+                        labels: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });           
+          
+
+                    var slider2A = new rSlider({
+                        target: '#slider2A',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider2B = new rSlider({
+                        target: '#slider2B',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [2],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider2C = new rSlider({
+                        target: '#slider2C',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+
+                    var slider3A = new rSlider({
+                        target: '#slider3A',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider3B = new rSlider({
+                        target: '#slider3B',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider3C = new rSlider({
+                        target: '#slider3C',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [2],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+
+                    var slider4A = new rSlider({
+                        target: '#slider4A',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [2],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider4B = new rSlider({
+                        target: '#slider4B',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider4C = new rSlider({
+                        target: '#slider4C',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [0],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+
+                    var slider5A = new rSlider({
+                        target: '#slider5A',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider5B = new rSlider({
+                        target: '#slider5B',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [2],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider5C = new rSlider({
+                        target: '#slider5C',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider5D = new rSlider({
+                        target: '#slider5D',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [0],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+                    var slider5E = new rSlider({
+                        target: '#slider5E',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        }
+                    });
+
+                    var slider6A = new rSlider({
+                        target: '#slider6A',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        } 
+                    });
+                    var slider6B = new rSlider({
+                        target: '#slider6B',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [0],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        } 
+                    });
+                    var slider6C = new rSlider({
+                        target: '#slider6C',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        } 
+                    });
+                    var slider6D = new rSlider({
+                        target: '#slider6D',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [2],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        } 
+                    });
+                    var slider6E = new rSlider({
+                        target: '#slider6E',
+                        values: [0, 1, 2],
+                        range: false,
+                        set: [1],
+                        tooltip: false,
+                        onChange: function (vals) { 
+                            console.log(vals);
+                        } 
+                    });
+
+
+                };
+                window.onload = init;
+            })();
+        </script>
+
+    </body>
+</html>

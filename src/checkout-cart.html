@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="assets/css/rSlider.min.css">
+    <link rel="stylesheet" href="assets/css/app-theme.css" />
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+
+    <title>Luna Academy</title>
+
+    </head>
+
+    <body class="inner-page checkout-page">
+        <main class="wrapper">
+            <!-- Header -->
+            <header>
+                <div class="header">
+                    <div class="container">
+                        <!-- Navigation -->
+                        <nav class="navbar navbar-expand-lg navbar-dark">    
+                            <div class="navbar-brand">
+                                <a href="#"><img src="assets/img/LUNA_logo.png" alt="Luna Academy Logo" class="img-fluid logo"></a>  
+                            </div>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa fa-bars"></i>
+                                </span>
+                            </button>
+        
+                            <div id="NavMenu" class="overlay NavMenu">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <!-- Dropdown menu -->
+                                    <div class="collapse navbar-collapse dropdown-links" id="navbarNavAltMarkup">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                    Short <br>
+                                                    Courses 
+                                                </a>
+                                                <div class="dropdown-wrapper" aria-labelledby="navbarDropdown">
+                                                    <div class="dropdown-container"> 
+                                                        <ul class="dropdown-menu dropdown">
+                                                            <li class="dropdown-submenu currentParent">
+                                                                <a class="dropdown-item right-arrow" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Microsoft Artificial Intelligence</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">Microsoft Future Ready: Introduction to Python Programming</a></li>
+                                                                    <li><a href="#">Microsoft Future Ready: Artificial Intelligence Fundamentals</a></li>
+                                                                    <li><a href="#">Microsoft Future Ready: Essential Mathematics for Machine Learning & AI</a></li>
+                                                                    <li><a href="#">Microsoft Future Ready: Essential Mathematics for Machine Learning & AI</a></li>
+                                                                </ul>
+                                                                </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Microsoft Cloud Computing</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">lorem ipsum</a></li>
+                                                                    <li><a href="#">dolor sit amet</a></li>
+                                                                    <li><a href="#">lorem</a></li>
+                                                                    <li><a href="#">ipsum</a></li>
+                                                                    </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft Data Science</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">Doloe lorem ipsum</a></li>
+                                                                    <li><a href="#">dolor sit amet</a></li>
+                                                                    <li><a href="#">lorem</a></li>
+                                                                    <li><a href="#">ipsum</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft DevOps</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <!-- No sub-submenu -->
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft Data Analysis & Visualization</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <!-- No sub-submenu -->
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft Dynamics 365</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <!-- No sub-submenu -->
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="btn btn-sm btn-outline-primary">View all short courses</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-cert" role="button" data-toggle="dropdown" aria-expanded="true">
+                                                    Industry Certification <br> 
+                                                    Tracks  
+                                                </a>
+                                                
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="nav-buttons">  
+                                            <span class="link">Contact us</span>
+                                            <span class="link icon"><i class="fa fa-shopping-cart"></i></span>
+                                            <button class="btn btn-outline-secondary" id="register"  data-toggle="modal" data-target="#RegisterModal">Register</button>
+                                            <button class="btn btn-secondary" id="login" data-toggle="modal" data-target="#LoginModal">Login</button> 
+                                        </div> 
+                                    </div>
+                                    <!-- Dropdown menu -->
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- Inner Banner and breadcrumb -->
+            <section class="checkout-page">
+                <div class="row inner-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 breadcrumb-wrapper"> 
+                                <i class="fa fa-chevron-left icon"></i> Back to Course
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Inner Banner and breadcrumb -->
+
+            <!-- Page Content -->
+            <section class="checkout-container"> 
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 class="title">Checkout</h3> 
+                        </div>
+                        <div class="col-md-4 link-center-right">
+                        
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row card-list-header"> 
+                                <div class="col-md-8">Course(s)</div>
+                                <div class="col-md-2 qty">Quantity</div> 
+                                <div class="col-md-2 amount">Amount</div> 
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card item-box card-horizontal card-light">
+                                <div class="row"> 
+                                    <div class="col-md-8 content-wrapper"> 
+                                        <div class="icon-wrapper">
+                                            <a href="#" data-toggle="modal" data-target="#RemoveCoursesModal"><span class="material-icons">close</span></a>
+                                        </div>
+                                        <div class="description-wrapper">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/courses.png" alt="Course Image" class="img-fluid thumb">
+                                            </div>
+                                            <div class="text-wrap">
+                                                Microsoft Future Ready:<br>
+                                                Artificial Intelligence Fundamentals
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 value-wrapper qty">
+                                        1
+                                    </div>
+                                    <div class="col-md-2 value-wrapper amount">
+                                        Php 500.00
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card item-box card-horizontal card-light">
+                                <div class="row"> 
+                                    <div class="col-md-8 content-wrapper"> 
+                                        <div class="icon-wrapper">
+                                            <a href="#" data-toggle="modal" data-target="#RemoveCoursesModal"><span class="material-icons">close</span></a>
+                                        </div>
+                                        <div class="description-wrapper">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/courses.png" alt="Course Image" class="img-fluid thumb">
+                                            </div>
+                                            <div class="text-wrap">
+                                                Microsoft Future Ready:<br>
+                                                Artificial Intelligence Fundamentals
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 value-wrapper qty">
+                                        1
+                                    </div>
+                                    <div class="col-md-2 value-wrapper amount">
+                                        Php 500.00
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                     <!-- Modal Remove Course --> 
+                     <div class="modal fade" id="RemoveCoursesModal" tabindex="-1" aria-labelledby="RemoveCoursesModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-center-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="RemoveCoursesModalLabel">Remove course?</h5>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to remove this course from the cart?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" data-mdb-ripple-color="dark">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Delete</button>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Modal Remove Course -->
+
+                    <!-- Modal Login --> 
+                    <div class="modal modal-form fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-center-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="close"><a href="#"  data-dismiss="modal"><span class="material-icons">close</span></a></div>
+                                    <h5 class="modal-title" id="LoginModalLabel">To proceed, log in to your account</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="md-form md-outline form-lg">
+                                        <input id="email" type="text" class="form-control form-control-lg">
+                                        <label for="email"  class="form-label">Email address</label>
+                                    </div>
+
+                                    <div class="md-form md-outline form-lg">
+                                        <input id="password" type="password" class="form-control form-control-lg">
+                                        <label for="password"  class="form-label">Password</label>
+                                    </div>
+
+                                    <div class="align-left">
+                                        Forgot password? <a href="#">Click here.</a>
+                                    </div>
+
+                                    <div class="btn-wrapper">
+                                        
+                                            <div class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" class="custom-control-input" id="RememberMe">
+                                                <label class="custom-control-label" for="RememberMe">Remember me</label>
+                                            </div>
+                                        
+                                        <div>
+                                            <button type="button" class="btn btn-primary">Log in</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    Don’t have LUNA academy account yet? <br>
+                                    <a href="#">Create an account!</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Modal Login -->
+
+                    <!-- Modal Register --> 
+                    <div class="modal modal-form fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-center-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="close"><a href="#"  data-dismiss="modal"><span class="material-icons">close</span></a></div>
+                                    <h5 class="modal-title" id="RegisterModalLabel">Create an account</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="md-form md-outline form-lg">
+                                        <input id="email" type="text" class="form-control form-control-lg">
+                                        <label for="email"  class="form-label">Email address</label>
+                                    </div>
+
+                                    <div class="md-form md-outline form-lg">
+                                        <input id="completeName" type="text" class="form-control form-control-lg">
+                                        <label for="completeName"  class="form-label">Complete name</label>
+                                    </div>
+
+                                    <div class="md-form md-outline form-lg">
+                                        <input id="mobileNumber" type="text" class="form-control form-control-lg">
+                                        <label for="mobileNumber"  class="form-label">Mobile number</label>
+                                    </div>
+
+                                    <div class="md-form md-outline form-lg">
+                                        <input id="password" type="password" class="form-control form-control-lg">
+                                        <label for="password"  class="form-label">Password</label>
+                                    </div>
+
+                                    <div class="align-left">
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" class="custom-control-input" id="termsCondition">
+                                            <label class="custom-control-label" for="termsCondition">I agree to <span>terms and conditions</span></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-wrapper"> 
+                                        <div class="btn-container">
+                                            <button type="button" class="btn btn-primary">Register</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    Already have LUNA academy account already? <br>
+                                    <a href="#"> Login now!</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Modal Register -->
+
+
+                    <hr>
+                    <div class="row btn-container">
+                        <div class="col-md-6">
+                            <div class="btn btn-outline-primary">Browse more Courses</div>
+                        </div>
+                        <div class="col-md-6 align-right">
+                            <div class="btn btn-default">Cancel</div>
+                            <div class="btn btn-primary">Confirm order</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Short Courses-->
+
+            <!-- /Page Content -->
+        </main>
+
+        <!-- Footer -->
+        <footer> 
+            <div class="container footer-content">
+                <div class="row">
+                    <div class="col-md logo-wrapper"> 
+                        <img src="assets/img/LUNA_Academy_light.png">
+                        <ul class="list-unstyled list-inline logo">
+                            <li><img src="assets/img/DITOCME.png"></li>
+                            <li><img src="assets/img/CloudSwyft.png"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md nav-link">
+                        <ul class="list-unstyled list-inline">
+                            <li>PRIVACY POLICY</li>
+                            <li>TERMS & CONDITIONS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container copy-right">
+                All rights reserved LUNA ACADEMY 2020. Copyright.
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- MDB-->
+        <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

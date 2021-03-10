@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="assets/css/rSlider.min.css">
+    <link rel="stylesheet" href="assets/css/app-theme.css" />
+    <link rel="stylesheet" href="assets/css/discussion.css" /> 
+
+    <title>Luna Academy</title>
+
+    </head>
+
+    <body class="inner-page home-logged discussion-page">
+        <main class="wrapper">
+            <!-- Header -->
+            <header>
+                <div class="header">
+                    <div class="container">
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-expand-lg navbar-dark">    
+                        <div class="navbar-brand">
+                            <a href="#"><img src="assets/img/LUNA_logo.png" alt="Luna Academy Logo" class="img-fluid logo"></a>  
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </button>
+    
+                        <div id="NavMenu" class="overlay NavMenu">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <!-- Dropdown menu -->
+                                <div class="collapse navbar-collapse logged" id="navbarNavAltMarkup">
+                                    <div class="nav-buttons nav-left">   
+                                        <span class="link">Library</span>
+                                        <span class="link">Courses</span>
+                                        <span class="link active">Discussions</span>
+                                        <span class="link">Progress</span> 
+                                    </div> 
+
+                                    <div class="nav-buttons">  
+                                        <span class="link">Browse courses</span>
+                                        <span class="link icon"><i class="fa fa-shopping-cart"></i></span>
+                                        <span class="link">My account</span>
+                                        <span class="line"></span>
+                                        <span class="link link-light">Log out</span> 
+                                    </div> 
+                                </div>
+                                <!-- Dropdown menu -->
+                            </div>
+                        </div>
+                    </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+ 
+            <!-- Page Content -->
+            <section class="discussion-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 class="title">Discussions</h3> 
+                        </div>
+                        <div class="col-md-4 link-center-right">
+                            <div class="btn btn-secondary">Add new post</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Sidepanel -->
+                        <div class="col-md-4 sidepanel">
+                            <div class="card"> 
+                                <div class="title-section">All posts</div>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item zero-item">
+                                        Followed post
+                                        <span class="badge bg-default rounded-pill">0</span>
+                                    </li>
+                                    <li class="list-group-item  zero-item">
+                                        General
+                                        <span class="badge bg-default rounded-pill">0</span>
+                                    </li>
+                                    <li class="list-group-item  zero-item">
+                                        Code error
+                                        <span class="badge bg-default rounded-pill">0</span>
+                                    </li>
+                                    <li class="list-group-item  zero-item">
+                                        Grading & certification
+                                        <span class="badge bg-default rounded-pill">0</span>
+                                    </li>
+                                    <li class="list-group-item  zero-item">
+                                        Corrections
+                                        <span class="badge bg-default rounded-pill">0</span>
+                                    </li>
+                                    <li class="list-group-item  zero-item">
+                                        Introduction
+                                        <span class="badge bg-default rounded-pill">0</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- /Sidepanel -->
+                        
+                        <div class="col-md-8 main-content">
+                            <div class="card no-discussion">
+                                <div class="img-wrapper">
+                                    <img src="assets/img/img_nodiscussion.png" alt="No discussion yet" class="img-fluid">
+                                </div>
+                                <div class="align-center">
+                                    <h5 class="text-label">No discussion yet</h5>
+                                    <p>Add new post to start discussion</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Page Content -->
+        </main>
+
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- MDB-->
+        <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

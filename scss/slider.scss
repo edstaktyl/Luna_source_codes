@@ -1,0 +1,52 @@
+.rs-container {
+    .rs-pointer {
+        background-color: #4915C2 !important;
+        height: 12px;
+        width: 12px; 
+        box-shadow: none;
+        border-radius: 50%;
+        border: none; 
+    
+        &::before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .rs-bg,
+    .rs-selected {
+        height: 2px;
+    }
+
+    .rs-selected {
+        background-color: #4915C2;
+        border: 1px solid #4915C2;
+    }
+
+    .rs-bg {
+        background:  rgba(130, 130, 130, 0.38);
+        border: none;
+    }
+
+    .rs-scale {
+        span {
+            &:before {
+                height: 2px;
+                width: 2px;
+                background: #4915C2;
+                top: 0; 
+                border-radius: 50%;
+            }
+
+            ins {
+                visibility: hidden; 
+            }
+
+            
+        }
+        
+    }
+
+    
+}
+    

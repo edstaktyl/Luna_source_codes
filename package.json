@@ -1,0 +1,22 @@
+{
+  "name": "luna-academy-teaser-development",
+  "version": "1.0.0",
+  "description": "Luna Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss -o src/assets/css"
+  },
+  "keywords": [
+    "Luna",
+    "Academy",
+    "Teaser"
+  ],
+  "author": "Guru",
+  "license": "ISC",
+  "dependencies": {
+    "@material/slider": "^8.0.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^5.0.0"
+  }
+}

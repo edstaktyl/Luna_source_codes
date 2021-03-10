@@ -1,0 +1,339 @@
+/** HOME **/
+/** -- Page -- **/
+.discussion-page .wrapper {
+  min-height: 100%;
+  padding-bottom: 40px; }
+
+.discussion-container {
+  padding-top: 38px; }
+  .discussion-container .link-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .discussion-container .sidepanel .card {
+    min-height: 480px; }
+    .discussion-container .sidepanel .card .favorite {
+      color: #DADADA; }
+      .discussion-container .sidepanel .card .favorite.active {
+        color: #5E25E3; }
+  .discussion-container .sidepanel .dropdown-toggle {
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+    padding-left: 0; }
+    .discussion-container .sidepanel .dropdown-toggle:active, .discussion-container .sidepanel .dropdown-toggle.active, .discussion-container .sidepanel .dropdown-toggle.focus, .discussion-container .sidepanel .dropdown-toggle:focus {
+      box-shadow: none;
+      border: 0;
+      outline: none; }
+  .discussion-container .sidepanel .back-wrapper {
+    padding: 15px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #310E82; }
+  .discussion-container .sidepanel .code-wrap {
+    padding: 20px 24px;
+    border-top: 1px solid #E2E4E7;
+    border-bottom: 1px solid #E2E4E7;
+    background: #FCFCFC; }
+    .discussion-container .sidepanel .code-wrap .md-form {
+      margin: 0; }
+      .discussion-container .sidepanel .code-wrap .md-form .form-control {
+        margin-bottom: 15px; }
+  .discussion-container .sidepanel .title-section {
+    padding: 22px 20px;
+    background: #FCFCFC;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #3E3F42;
+    margin: 3px; }
+  .discussion-container .sidepanel .post-info {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    color: #717580;
+    padding: 15px 25px; }
+  .discussion-container .sidepanel .list-group {
+    border: 0; }
+    .discussion-container .sidepanel .list-group .list-group-item {
+      padding: 12px 25px;
+      border: 0;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 14px;
+      color: #310E82; }
+      .discussion-container .sidepanel .list-group .list-group-item:first-child {
+        border-bottom: 1px solid #E2E4E7; }
+      .discussion-container .sidepanel .list-group .list-group-item.zero-item {
+        color: rgba(0, 0, 0, 0.24); }
+    .discussion-container .sidepanel .list-group.post-list li {
+      padding: 0 !important; }
+      .discussion-container .sidepanel .list-group.post-list li:first-child {
+        border-bottom: 0; }
+      .discussion-container .sidepanel .list-group.post-list li:last-child .post-wrapper {
+        border-bottom: 0; }
+      .discussion-container .sidepanel .list-group.post-list li .post-wrapper {
+        padding: 8px 0;
+        width: 100%;
+        margin: 0 25px;
+        border-bottom: 1px solid #E2E4E7; }
+        .discussion-container .sidepanel .list-group.post-list li .post-wrapper .icon {
+          font-size: 16px;
+          margin-right: 6px; }
+        .discussion-container .sidepanel .list-group.post-list li .post-wrapper div {
+          padding: 2px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .discussion-container .sidepanel .list-group.post-list li .post-wrapper div.post-description {
+            font-size: 11px;
+            line-height: 18px;
+            color: #3E3F42;
+            padding-left: 25px; }
+      .discussion-container .sidepanel .list-group.post-list li.active {
+        border-left: 2px solid #5E25E3;
+        background: transparent;
+        color: #000000; }
+        .discussion-container .sidepanel .list-group.post-list li.active .icon.icon-notif {
+          color: #000000; }
+          .discussion-container .sidepanel .list-group.post-list li.active .icon.icon-notif:before {
+            content: "\f111";
+            font-family: "FontAwesome";
+            font-size: 6px;
+            margin-right: 3px;
+            position: relative;
+            top: -7px;
+            color: #5E25E3; }
+      .discussion-container .sidepanel .list-group.post-list li .badge-text {
+        background: #F5F5F5;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 8px;
+        color: #717580 !important;
+        box-shadow: none;
+        height: 20px;
+        border-radius: 10px;
+        padding: 5px 10px; }
+  .discussion-container .main-content .card {
+    padding: 40px; }
+    .discussion-container .main-content .card .avatar-wrapper {
+      border-radius: 50%; }
+      .discussion-container .main-content .card .avatar-wrapper.md {
+        width: 55px;
+        height: 55px; }
+      .discussion-container .main-content .card .avatar-wrapper.sm {
+        width: 37px;
+        height: 37px; }
+      .discussion-container .main-content .card .avatar-wrapper img {
+        border-radius: 50%; }
+    .discussion-container .main-content .card .icon-more .dropdown-toggle {
+      border: 0;
+      background: transparent; }
+      .discussion-container .main-content .card .icon-more .dropdown-toggle:after {
+        display: none; }
+      .discussion-container .main-content .card .icon-more .dropdown-toggle:active, .discussion-container .main-content .card .icon-more .dropdown-toggle.active, .discussion-container .main-content .card .icon-more .dropdown-toggle.focus, .discussion-container .main-content .card .icon-more .dropdown-toggle:focus {
+        box-shadow: none;
+        border: 0;
+        outline: none; }
+    .discussion-container .main-content .card .icon-more .dropdown-menu {
+      filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.2));
+      border: 0;
+      background: #fff; }
+      .discussion-container .main-content .card .icon-more .dropdown-menu li {
+        color: #310E82;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px; }
+        .discussion-container .main-content .card .icon-more .dropdown-menu li a {
+          color: #310E82;
+          font-weight: 500; }
+    .discussion-container .main-content .card .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      margin-top: 0;
+      display: flex;
+      align-items: center; }
+    .discussion-container .main-content .card .sub-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+      color: #3E3F42;
+      margin-bottom: 5px; }
+    .discussion-container .main-content .card p {
+      color: #717580;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px; }
+    .discussion-container .main-content .card .md-form {
+      margin-top: 0; }
+      .discussion-container .main-content .card .md-form .form-control {
+        margin-bottom: 0; }
+    .discussion-container .main-content .card .option-section {
+      margin-bottom: 1.5rem; }
+      .discussion-container .main-content .card .option-section .form-check-input {
+        margin-left: 0; }
+      .discussion-container .main-content .card .option-section .custom-radio {
+        padding: 15px 20px;
+        background: #F5F5F5;
+        display: block;
+        width: 100%;
+        border-radius: 5px; }
+        .discussion-container .main-content .card .option-section .custom-radio.active {
+          background: rgba(94, 37, 227, 0.08);
+          color: #310E82; }
+        .discussion-container .main-content .card .option-section .custom-radio label {
+          padding-left: 24px;
+          line-height: 24px; }
+        .discussion-container .main-content .card .option-section .custom-radio.question:after {
+          content: 'help'; }
+        .discussion-container .main-content .card .option-section .custom-radio.discussion:after {
+          content: 'mode_comment'; }
+        .discussion-container .main-content .card .option-section .custom-radio.discussion:after, .discussion-container .main-content .card .option-section .custom-radio.question:after {
+          font-family: 'Material Icons';
+          font-size: 22px;
+          margin-right: 10px;
+          position: absolute;
+          color: #717580;
+          right: 0;
+          z-index: 1;
+          margin-top: -5px; }
+    .discussion-container .main-content .card .form-container {
+      margin-bottom: 15px; }
+    .discussion-container .main-content .card .editor-container .img-editor {
+      width: 100%; }
+    .discussion-container .main-content .card .btn-container {
+      margin: 15px 0 0; }
+      .discussion-container .main-content .card .btn-container .btn {
+        margin-bottom: 0; }
+    .discussion-container .main-content .card .custom-control-label {
+      line-height: 24px; }
+    .discussion-container .main-content .card .info-text {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      color: #717580; }
+    .discussion-container .main-content .card .comment-wrapper {
+      background: #FCFCFC;
+      border-radius: 5px;
+      padding: 24px;
+      margin: 15px; }
+      .discussion-container .main-content .card .comment-wrapper .no-comment {
+        text-align: center; }
+      .discussion-container .main-content .card .comment-wrapper .text-label {
+        color: #3E3F42;
+        letter-spacing: -0.3px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px; }
+      .discussion-container .main-content .card .comment-wrapper p {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #3E3F42;
+        margin-bottom: 0; }
+      .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-reply,
+      .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-item {
+        display: flex; }
+        .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-reply div,
+        .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-item div {
+          display: inline-block; }
+      .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-item:before {
+        width: 2px;
+        background: #CED5DC;
+        content: '';
+        display: block;
+        position: relative;
+        left: 30px;
+        z-index: 1; }
+      .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-item .post-text-wrapper {
+        padding-bottom: 16px; }
+      .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-reply {
+        margin: 0 12px 16px; }
+        .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-reply .icon {
+          color: #5E25E3;
+          margin-right: -35px; }
+      .discussion-container .main-content .card .comment-wrapper .post-commnets li .avatar-wrapper {
+        margin-right: 10px;
+        z-index: 2; }
+      .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-text-wrapper {
+        width: calc(100% - 65px);
+        text-align: left; }
+        .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-text-wrapper .post-bio {
+          color: #000000;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: -0.3px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-text-wrapper .post-bio span {
+            color: #717580; }
+          .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-text-wrapper .post-bio .icon {
+            color: #5E25E3; }
+        .discussion-container .main-content .card .comment-wrapper .post-commnets li .post-text-wrapper p {
+          text-align: left;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px; }
+    .discussion-container .main-content .card .card-top {
+      margin-bottom: 30px; }
+      .discussion-container .main-content .card .card-top .text-wrap {
+        color: #310E82;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        display: flex;
+        align-items: center; }
+        .discussion-container .main-content .card .card-top .text-wrap .icon {
+          margin-right: 8px; }
+      .discussion-container .main-content .card .card-top .icon-wrap {
+        display: flex;
+        justify-content: flex-end; }
+        .discussion-container .main-content .card .card-top .icon-wrap .icon {
+          color: #5E25E3; }
+        .discussion-container .main-content .card .card-top .icon-wrap .favorite {
+          color: #717580; }
+          .discussion-container .main-content .card .card-top .icon-wrap .favorite.active {
+            color: #5E25E3; }
+  .discussion-container .main-content .no-discussion {
+    min-height: 480px;
+    padding: 80px 40px;
+    margin-bottom: 40px; }
+    .discussion-container .main-content .no-discussion .img-wrapper {
+      display: flex;
+      justify-content: center; }
+      .discussion-container .main-content .no-discussion .img-wrapper img {
+        max-width: 240px; }
+    .discussion-container .main-content .no-discussion .text-label {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      color: #3E3F42; }
+    .discussion-container .main-content .no-discussion p {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 26px;
+      color: #3E3F42; }
+
+@media (max-width: 767px) {
+  .main-content .card {
+    margin-top: 30px; }
+  .main-content .option-section .custom-radio {
+    margin-bottom: 1rem; }
+  .main-content .btn-container .btn {
+    margin-bottom: 1rem !important;
+    width: 100%; }
+    .main-content .btn-container .btn:last-child {
+      margin-bottom: 0 !important; } }
+
+@media only screen and (max-width: 991px) and (min-width: 767px) {
+  .discussion-container .main-content .card-top .text-wrap {
+    align-items: flex-start !important; } }

@@ -1,0 +1,31 @@
+.rs-container .rs-pointer {
+  background-color: #4915C2 !important;
+  height: 12px;
+  width: 12px;
+  box-shadow: none;
+  border-radius: 50%;
+  border: none; }
+  .rs-container .rs-pointer::before, .rs-container .rs-pointer:after {
+    display: none; }
+
+.rs-container .rs-bg,
+.rs-container .rs-selected {
+  height: 2px; }
+
+.rs-container .rs-selected {
+  background-color: #4915C2;
+  border: 1px solid #4915C2; }
+
+.rs-container .rs-bg {
+  background: rgba(130, 130, 130, 0.38);
+  border: none; }
+
+.rs-container .rs-scale span:before {
+  height: 2px;
+  width: 2px;
+  background: #4915C2;
+  top: 0;
+  border-radius: 50%; }
+
+.rs-container .rs-scale span ins {
+  visibility: hidden; }

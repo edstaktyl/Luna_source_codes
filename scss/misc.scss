@@ -1,0 +1,46 @@
+/** MISC **/
+@import "variables";
+
+
+/** -- Page -- **/
+.misc-page {
+    .wrapper {
+        min-height: 100%; 
+        background: #F5F5F5; 
+    }
+
+    &.error-page {
+        height: 100%;
+
+        .container {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 80px;
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .content-wrapper {
+            text-align: center;
+
+            img {
+                max-width: 300px;
+            }
+        }
+
+        .btn-container {
+            margin: 30px 0;
+        }
+    }
+}
+ 

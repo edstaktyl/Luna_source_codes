@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="assets/css/rSlider.min.css">
+    <link rel="stylesheet" href="assets/css/app-theme.css" />
+    <link rel="stylesheet" href="assets/css/checkout.css" /> 
+
+    <title>Luna Academy</title>
+
+    </head>
+
+    <body class="inner-page home-logged">
+        <main class="wrapper">
+            <!-- Header -->
+            <header>
+                <div class="header">
+                    <div class="container">
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-expand-lg navbar-dark">    
+                        <div class="navbar-brand">
+                            <a href="#"><img src="assets/img/LUNA_logo.png" alt="Luna Academy Logo" class="img-fluid logo"></a>  
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </button>
+    
+                        <div id="NavMenu" class="overlay NavMenu">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <!-- Dropdown menu -->
+                                <div class="collapse navbar-collapse logged" id="navbarNavAltMarkup">
+                                    <div class="nav-buttons nav-left">   
+                                        <span class="link active">Home</span>
+                                        <span class="link">Courses</span>
+                                        <span class="link">Discussions</span>
+                                        <span class="link">Progress</span> 
+                                    </div> 
+
+                                    <div class="nav-buttons">  
+                                        <span class="link">Browse courses</span>
+                                        <span class="link icon"><i class="fa fa-shopping-cart"></i></span>
+                                        <span class="link">My account</span>
+                                        <span class="line"></span>
+                                        <span class="link link-light">Log out</span> 
+                                    </div> 
+                                </div>
+                                <!-- Dropdown menu -->
+                            </div>
+                        </div>
+                    </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+ 
+            <!-- Inner Banner and breadcrumb -->
+            <section class="checkout-page">
+                <div class="row inner-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 breadcrumb-wrapper"> 
+                                <i class="fa fa-chevron-left icon"></i> Back to Course
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Inner Banner and breadcrumb -->
+ 
+            <!-- Page Content -->
+            <section class="checkout-page checkout-container payment"> 
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 class="title">Payment</h3> 
+                        </div>
+                        <div class="col-md-4 link-center-right">
+                        
+                        </div>
+                    </div>
+
+                    <div class="row"> 
+                        <div class="col-md-6 col-sm-12">
+                            <h2 class="h5 sub-title">Select payment option</h2>
+
+                            <div class="payment-options">
+                                <div class="card-item-wrap active">
+                                    <div class="card item">
+                                        <img src="assets/img/PayPal.png" alt="Paypal Logo" class="img-fluid">
+                                    </div>
+                                    Paypal
+                                </div>
+                                
+                                <div class="card-item-wrap">
+                                    <div class="card item"> 
+                                        <img src="assets/img/cards.png" alt="Cards Logo" class="img-fluid">
+                                    </div>
+                                    Credit/Debit 
+                                </div>
+                                
+                            </div>
+
+                            <div class="text-detail">We accept your Paypal payment. Your Paypal account will not be charged until after you've confirmed your order.</div> 
+                            <img src="assets/img/paypal-btn.png" alt="Check out with Paypal" class="img-fluid"> 
+                           <hr>
+                           <div class="btn-container align-right">
+                               <div class="btn btn-default">Cancel</div>
+                               <div class="btn btn-primary">Pay now!</div>
+                           </div>
+                        </div>
+                        <div class="col-md-5 offset-md-1 col-sm-12 sidepanel">
+                            <div class="card">
+                                <h5 class="sub-title">Course to purchase <span class="badge badge-circle-default">1</span></h5>
+                                <!-- <div class="row"> -->
+                                    <div class="card-cart-item">
+                                        <div class="content-wrapper"> 
+                                       
+                                            <div class="icon-wrapper">
+                                                <a href="#" data-toggle="modal" data-target="#RemoveCoursesModal"><span class="material-icons">close</span></a>
+                                            </div>
+                                            <div class="description-wrapper">
+                                                <div class="img-wrap">
+                                                    <img src="assets/img/courses.png" alt="Course Image" class="img-fluid thumb">
+                                                </div>
+                                                <div class="text-wrap">
+                                                    Microsoft Future Ready:<br>
+                                                    Artificial Intelligence Fundamentals
+
+                                                    <div class="amount mt-10"> 
+                                                        <span class="text-label">Quantity</span> <strong>1</strong>
+                                                    </div>
+                                                    <div class="amount">
+                                                        <span class="text-label">Amount</span> <strong>Php 500.00</strong> 
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                <!-- </div> -->
+
+                            </div>
+                            <div class="btn-container align-right">
+                                <div class="btn-link">Browse more Courses</div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                </div>
+            </section>
+            <!-- /Short Courses-->
+
+            <!-- /Page Content -->
+        </main>
+
+        <!-- Footer -->
+        <footer> 
+            <div class="container footer-content">
+                <div class="row">
+                    <div class="col-md logo-wrapper"> 
+                        <img src="assets/img/LUNA_Academy_light.png">
+                        <ul class="list-unstyled list-inline logo">
+                            <li><img src="assets/img/DITOCME.png"></li>
+                            <li><img src="assets/img/CloudSwyft.png"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md nav-link">
+                        <ul class="list-unstyled list-inline">
+                            <li>PRIVACY POLICY</li>
+                            <li>TERMS & CONDITIONS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container copy-right">
+                All rights reserved LUNA ACADEMY 2020. Copyright.
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- MDB-->
+        <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

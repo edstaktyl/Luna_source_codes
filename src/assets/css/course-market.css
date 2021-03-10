@@ -1,0 +1,32 @@
+/** HOME **/
+/** -- Page -- **/
+.course-market.short-courses {
+  /** FORMS **/ }
+  .course-market.short-courses .sidepanel a {
+    font-weight: bold; }
+  .course-market.short-courses .sidepanel ul {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0; }
+    .course-market.short-courses .sidepanel ul li {
+      padding: 5px 0; }
+      .course-market.short-courses .sidepanel ul li label, .course-market.short-courses .sidepanel ul li:hover {
+        cursor: pointer; }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .course-market.short-courses .main-content .col-item-list {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  .course-market.short-courses .title {
+    font-size: 40px;
+    margin-bottom: 34px; }
+  .course-market.short-courses .link-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .course-market.short-courses .btn-link {
+    color: #4915C2;
+    font-weight: bold; }
+    .course-market.short-courses .btn-link a {
+      color: #4915C2; }
+  .course-market.short-courses .sort-input {
+    width: 190px; }

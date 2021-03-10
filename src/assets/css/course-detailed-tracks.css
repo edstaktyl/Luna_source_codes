@@ -1,0 +1,348 @@
+/** HOME **/
+/** -- Page -- **/
+.course-detailed-tracks.page {
+  margin-bottom: 40px; }
+
+.course-detailed-tracks {
+  /** FORMS **/ }
+  @media (max-width: 490px) {
+    .course-detailed-tracks.hero-banner-info {
+      background-color: #190742; }
+      .course-detailed-tracks.hero-banner-info .row {
+        margin-right: 0;
+        margin-left: 0; } }
+  .course-detailed-tracks .inner-banner {
+    position: relative;
+    height: 560px;
+    color: #fff;
+    background: linear-gradient(180deg, #310E82 0%, #190742 100%); }
+    @media only screen and (max-width: 991px) and (min-width: 491px) {
+      .course-detailed-tracks .inner-banner {
+        height: 475px; } }
+    @media (max-width: 490px) {
+      .course-detailed-tracks .inner-banner {
+        height: 685px; } }
+    .course-detailed-tracks .inner-banner .bg-img-container {
+      position: absolute;
+      right: -10%;
+      height: 100%;
+      width: 500px;
+      opacity: .14; }
+      .course-detailed-tracks .inner-banner .bg-img-container img {
+        margin-top: 20px;
+        height: 100%; }
+    .course-detailed-tracks .inner-banner .badge {
+      background: #5E25E3;
+      border-radius: 40px;
+      padding: 15px 25px;
+      font-weight: normal;
+      font-size: 18px; }
+      .course-detailed-tracks .inner-banner .badge .icon {
+        margin-right: 10px; }
+    .course-detailed-tracks .inner-banner .title {
+      color: #fff;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 64px;
+      margin-bottom: 42px; }
+    .course-detailed-tracks .inner-banner .breadcrumb-wrapper {
+      color: #fff; }
+    .course-detailed-tracks .inner-banner .cta-panel {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 50px;
+      justify-content: flex-end; }
+      .course-detailed-tracks .inner-banner .cta-panel .cta-wrapper {
+        text-align: right; }
+      .course-detailed-tracks .inner-banner .cta-panel .price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 18px; }
+    .course-detailed-tracks .inner-banner .stats small {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #717580; }
+    .course-detailed-tracks .inner-banner .stats .text-value {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      color: #3E3F42;
+      padding: 15px 0 0; }
+    .course-detailed-tracks .inner-banner .stats .ico-range {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 10px; }
+    .course-detailed-tracks .inner-banner .stats-wrapper .card {
+      padding: 24px;
+      height: 145px; }
+    .course-detailed-tracks .inner-banner .stats-wrapper .date-range-wrapper .text-value {
+      margin-top: 20px; }
+    .course-detailed-tracks .inner-banner .stats-menu .card {
+      padding: 20px;
+      margin-top: 30px;
+      flex-direction: inherit;
+      color: #3E3F42;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      align-items: center; }
+      .course-detailed-tracks .inner-banner .stats-menu .card .icon {
+        margin-right: 10px; }
+    @media only screen and (max-width: 991px) and (min-width: 491px) {
+      .course-detailed-tracks .inner-banner .title {
+        font-size: 33px;
+        line-height: 45px;
+        margin-bottom: 20px; }
+      .course-detailed-tracks .inner-banner .course-detailed .inner-banner .badge {
+        padding: 10px 20px; }
+      .course-detailed-tracks .inner-banner .cta-panel {
+        margin-bottom: 20px; }
+      .course-detailed-tracks .inner-banner .stats-wrapper .card {
+        padding: 15px;
+        height: 135px; }
+      .course-detailed-tracks .inner-banner .stats-wrapper .text-value {
+        font-size: 14px;
+        line-height: 18px; }
+      .course-detailed-tracks .inner-banner .stats-wrapper .date-range-wrapper .col {
+        padding-right: 0; }
+      .course-detailed-tracks .inner-banner .stats-wrapper .date-range-wrapper .ico-range {
+        padding-right: 5px;
+        padding-left: 5px; }
+      .course-detailed-tracks .inner-banner .stats-wrapper .date-range-wrapper .text-value {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 10px; }
+      .course-detailed-tracks .inner-banner .stats-menu .card {
+        padding: 15px;
+        margin-top: 15px;
+        min-height: 70px;
+        font-size: 14px;
+        line-height: 20px; } }
+    @media (max-width: 490px) {
+      .course-detailed-tracks .inner-banner .title {
+        font-size: 33px;
+        line-height: 45px;
+        margin-bottom: 0; }
+      .course-detailed-tracks .inner-banner .cta-panel {
+        margin-bottom: 20px; }
+        .course-detailed-tracks .inner-banner .cta-panel .cta-wrapper {
+          width: 100%; }
+      .course-detailed-tracks .inner-banner .stats-wrapper .card {
+        padding: 15px;
+        height: 90px;
+        margin-bottom: 15px; }
+      .course-detailed-tracks .inner-banner .stats-wrapper .text-value {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 10px  !important;
+        padding-top: 0; }
+      .course-detailed-tracks .inner-banner .stats-menu .card {
+        padding: 15px;
+        margin-top: 15px;
+        min-height: 70px;
+        font-size: 14px;
+        line-height: 20px; }
+      .course-detailed-tracks .inner-banner .badge {
+        padding: 10px 14px; } }
+  .course-detailed-tracks .sub-title {
+    margin: 30px 0 18px 0; }
+  .course-detailed-tracks .sidepanel a {
+    font-weight: bold; }
+  .course-detailed-tracks .sidepanel ul {
+    margin: 0;
+    padding: 0 15px; }
+    .course-detailed-tracks .sidepanel ul li {
+      padding: 5px 0; }
+      .course-detailed-tracks .sidepanel ul li label, .course-detailed-tracks .sidepanel ul li:hover {
+        cursor: pointer; }
+  .course-detailed-tracks .sidepanel .card {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    padding: 20px 15px; }
+  .course-detailed-tracks .link-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .course-detailed-tracks .btn-link {
+    color: #4915C2;
+    font-weight: bold; }
+    .course-detailed-tracks .btn-link a {
+      color: #4915C2; }
+  .course-detailed-tracks .price-section,
+  .course-detailed-tracks .cta-section {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center; }
+  .course-detailed-tracks .cta-section {
+    justify-content: flex-end; }
+    .course-detailed-tracks .cta-section .btn {
+      margin-bottom: 0; }
+  .course-detailed-tracks .sort-input {
+    width: 190px; }
+
+/** Carousel Section **/
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+.carousel-section {
+  background: #E1E2E6;
+  padding: 10px 0 0;
+  /* MD */
+  /* LG */ }
+  .carousel-section .container {
+    padding: 0; }
+  .carousel-section .container-fluid {
+    padding: 0;
+    margin: 0; }
+  .carousel-section .carousel-control-next, .carousel-section .carousel-control-prev {
+    top: -20px; }
+  .carousel-section .carousel-control-prev {
+    justify-content: flex-start;
+    left: -10px; }
+  .carousel-section .carousel-control-next {
+    justify-content: flex-end; }
+  .carousel-section .control-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5E25E3; }
+    .carousel-section .control-btn i {
+      font-size: 1.3rem; }
+  .carousel-section .carousel-inner .carousel-item {
+    height: 190px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .carousel-section .carousel-inner .carousel-item .item-box {
+      margin-bottom: 10px;
+      transition: 0.2s; }
+    .carousel-section .carousel-inner .carousel-item:hover {
+      border-bottom: 4px solid #4915C2; }
+      .carousel-section .carousel-inner .carousel-item:hover .item-box {
+        top: -6px;
+        animation-duration: 7s;
+        margin-bottom: 10px;
+        transition: 0.2s; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .carousel-section {
+      /* Show 4th slide on md if col-md-4*/ }
+      .carousel-section .carousel-inner .active.col-md-3.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .carousel-section {
+      /* Show 3rd slide on sm if col-sm-6*/ }
+      .carousel-section .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;
+        /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible; } }
+  @media (min-width: 576px) {
+    .carousel-section {
+      /* show 2 items */
+      /* left or forward direction */
+      /* farthest right hidden item must be also positioned for animations */
+      /* right or prev direction */ }
+      .carousel-section .carousel-item {
+        margin-right: 0; }
+      .carousel-section .carousel-inner .active + .carousel-item {
+        display: block; }
+      .carousel-section .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+      .carousel-section .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none; }
+      .carousel-section .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0); }
+      .carousel-section .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+      .carousel-section .carousel-item-next.carousel-item-left + .carousel-item,
+      .carousel-section .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible; }
+      .carousel-section .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible; }
+      .carousel-section .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+      .carousel-section .carousel-item-prev.carousel-item-right + .carousel-item,
+      .carousel-section .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible; } }
+  @media (min-width: 768px) {
+    .carousel-section {
+      /* show 3rd of 3 item slide */
+      /* left or forward direction */
+      /* right or prev direction */ }
+      .carousel-section .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block; }
+      .carousel-section .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none; }
+      .carousel-section .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0); }
+      .carousel-section .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible; }
+      .carousel-section .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible; } }
+  @media (min-width: 991px) {
+    .carousel-section {
+      /* show 4th item */
+      /* Show 5th slide on lg if col-lg-3 */
+      /* left or forward direction */
+      /* right or prev direction //t - previous slide direction last item animation fix */ }
+      .carousel-section .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block; }
+      .carousel-section .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none; }
+      .carousel-section .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible; }
+      .carousel-section .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible; }
+      .carousel-section .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible; } }

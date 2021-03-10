@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="assets/css/rSlider.min.css">
+    <link rel="stylesheet" href="assets/css/app-theme.css" />
+    <link rel="stylesheet" href="assets/css/course-detailed.css" />
+
+    <title>Luna Academy</title>
+
+    </head>
+
+    <body class="inner-page course">
+        <main class="wrapper">
+            <!-- Header -->
+            <header>
+                <div class="header">
+                    <div class="container">
+                        <!-- Navigation -->
+                        <nav class="navbar navbar-expand-lg navbar-dark">    
+                            <div class="navbar-brand">
+                                <a href="#"><img src="assets/img/LUNA_logo.png" alt="Luna Academy Logo" class="img-fluid logo"></a>  
+                            </div>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa fa-bars"></i>
+                                </span>
+                            </button>
+        
+                            <div id="NavMenu" class="overlay NavMenu">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <!-- Dropdown menu -->
+                                    <div class="collapse navbar-collapse dropdown-links" id="navbarNavAltMarkup">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                                    Short <br>
+                                                    Courses 
+                                                </a>
+                                                <div class="dropdown-wrapper" aria-labelledby="navbarDropdown">
+                                                    <div class="dropdown-container"> 
+                                                        <ul class="dropdown-menu dropdown">
+                                                            <li class="dropdown-submenu currentParent">
+                                                                <a class="dropdown-item right-arrow" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Microsoft Artificial Intelligence</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">Microsoft Future Ready: Introduction to Python Programming</a></li>
+                                                                    <li><a href="#">Microsoft Future Ready: Artificial Intelligence Fundamentals</a></li>
+                                                                    <li><a href="#">Microsoft Future Ready: Essential Mathematics for Machine Learning & AI</a></li>
+                                                                    <li><a href="#">Microsoft Future Ready: Essential Mathematics for Machine Learning & AI</a></li>
+                                                                </ul>
+                                                                </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Microsoft Cloud Computing</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">lorem ipsum</a></li>
+                                                                    <li><a href="#">dolor sit amet</a></li>
+                                                                    <li><a href="#">lorem</a></li>
+                                                                    <li><a href="#">ipsum</a></li>
+                                                                    </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft Data Science</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">Doloe lorem ipsum</a></li>
+                                                                    <li><a href="#">dolor sit amet</a></li>
+                                                                    <li><a href="#">lorem</a></li>
+                                                                    <li><a href="#">ipsum</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft DevOps</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <!-- No sub-submenu -->
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft Data Analysis & Visualization</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <!-- No sub-submenu -->
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">Microsoft Dynamics 365</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <!-- No sub-submenu -->
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="btn btn-sm btn-outline-primary">View all short courses</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-cert" role="button" data-toggle="dropdown" aria-expanded="true">
+                                                    Industry Certification <br> 
+                                                    Tracks  
+                                                </a>
+                                                
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="nav-buttons">  
+                                            <span class="link">Contact us</span>
+                                            <span class="link icon"><i class="fa fa-shopping-cart"></i></span>
+                                            <button class="btn btn-outline-secondary" id="register">Register</button>
+                                            <button class="btn btn-secondary" id="login">Login</button> 
+                                        </div> 
+                                    </div>
+                                    <!-- Dropdown menu -->
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+
+           <!-- Inner Banner and breadcrumb -->
+            <section class="course-detailed hero-banner-info">
+                <div class="row inner-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 breadcrumb-wrapper"> 
+                                <i class="fa fa-chevron-left icon"></i> Back to Home
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <div class="badge">
+                                    <i class="fa fa-window-maximize icon"></i>Microsoft Future Ready
+                                </div>
+                                <h1 class="title">
+                                    AI Engineering Fundamentals
+                                </h1>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12 cta-panel">
+                                <div class="cta-wrapper">
+                                    <div class="btn btn-lg btn-secondary">Enroll Now!</div> 
+                                    <div class="price">₱ 499.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-wrapper stats">
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <div class="card date-range-wrapper">
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <small>Classes start</small>
+                                            <div class="text-value">Jan. 1, 2020 </div>
+                                        </div>
+                                        <div class="col-md-2 col-2 ico-range">
+                                            <img src="assets/img/img-icon-date-range.png" alt="Icon date range" class="img-fluid icon">
+                                        </div>
+                                        <div class="col-md-5 col-5"> 
+                                            <small>Classes end</small>
+                                            <div class="text-value">Feb. 1, 2020 </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-6">
+                                <div class="card">
+                                    <small>Level</small>
+                                    <div class="text-value">Mid to <br>Advance</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-6">
+                                <div class="card">
+                                    <small>Estimated effort</small>
+                                    <div class="text-value">12 - 24 <br>hours</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stats-menu">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="card">
+                                    <img src="assets/img/widgets_24px_rounded.png" alt="Widget Icon" class="icon"> 
+                                    <div>Mixed format </div>
+                                </div>
+                            </div>  
+                            <div class="col-md-6 col-sm-6">
+                                <div class="card">
+                                    <img src="assets/img/assignment_ind_24px_rounded.png" alt="Application Icon" class="icon"> Application to all professionals
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Inner Banner and breadcrumb -->
+
+             <!-- Page Content -->
+            <section class="course-detailed page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <h2 class="h4 sub-title">ABOUT THIS COURSE</h2>
+                            <p>Artificial Intelligence will define the next generation of software solutions. This computer science course provides an overview of AI, and explains how it can be used to build smart apps that help organizations be more efficient and enrich people's lives. It uses a mix of engaging lectures and hands-on activities to help you take your first steps in the exciting field of AI.</p>
+                            <p>Discover how machine learning can be used to build predictive models for AI. Learn how software can be used to process, analyze, and extract meaning from natural language; and to process images and video to understand the world the way we do. Find out how to build intelligent bots that enable conversational communication between humans and AI systems.</p>
+                            <p>Note: The practical elements of this course are based on Microsoft Azure, and require an Azure subscription. Instructions for signing up for a free trial subscription are provided with the course materials, or you can use an existing Azure subscription if you have one.</p>
+                        
+                            <h2 class="h4 sub-title">WHAT YOU'LL LEARN</h2>
+                            <p>In this course, you will learn how to:</p>
+                            <ul>
+                                <li>Build simple machine learning models with Azure Machine Learning;</li>
+                                <li>Use Python and Microsoft cognitive services to work with text, speech, images, and video;</li>
+                                <li>Use the Microsoft Bot Framework to implement conversational bots.</li>
+                            </ul>
+                            <hr>
+                            <div class="row">
+                                <div class="col price-section"> 
+                                    ₱ 499.00
+                                </div>   
+                                <div class="col cta-section">
+                                    <div class="btn btn-secondary">Enroll Now!</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 offset-md-1 col-sm-12 sidepanel">
+                            <h2 class="h4 sub-title">COURSE SYLLABUS</h2>
+                            <div class="card">
+                                <ul>
+                                    <li>Introduction</li>
+                                    <li>Machine Learning – The Foundation of AI</li>
+                                    <li>Text and Speech – Understanding Language</li>
+                                    <li>Computer Vision – Seeing the World Through AI</li>
+                                    <li>Bots – Conversation as a Platform</li>
+                                    <li>Next Steps</li>
+                                </ul>
+                            </div>
+
+                            <h2 class="h4 sub-title">PREREQUISITES</h2>
+                            <div class="card">
+                                <ul>
+                                    <li>High-school level math and statistics.</li>
+                                    <li>A basic knowledge of programming – Python would be an advantage, but is not essential.</li>
+                                    <li>A willingness to learn through exploration and perseverance.</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Short Courses-->
+
+            <!-- /Page Content -->
+        </main>
+
+        <!-- Footer -->
+        <footer> 
+            <div class="container footer-content">
+                <div class="row">
+                    <div class="col-md logo-wrapper"> 
+                        <img src="assets/img/LUNA_Academy_light.png">
+                        <ul class="list-unstyled list-inline logo">
+                            <li><img src="assets/img/DITOCME.png"></li>
+                            <li><img src="assets/img/CloudSwyft.png"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md nav-link">
+                        <ul class="list-unstyled list-inline">
+                            <li>PRIVACY POLICY</li>
+                            <li>TERMS & CONDITIONS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container copy-right">
+                All rights reserved LUNA ACADEMY 2020. Copyright.
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- MDB-->
+        <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

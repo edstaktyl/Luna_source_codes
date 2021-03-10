@@ -1,0 +1,528 @@
+/** HOME **/
+@import "variables";
+
+
+/** -- Page -- **/
+.course-detailed-tracks.page { 
+    margin-bottom: 40px; 
+}
+ 
+.course-detailed-tracks { 
+    &.hero-banner-info {
+       // height: 570px; 
+ 
+        // @media only screen and (max-width: 991px) and (min-width: 491px)  {
+        //     height: 475px; 
+        // } 
+        
+        @media (max-width: 490px) {
+           //height: 685px;   
+
+            background-color: #190742;  
+
+            .row {
+                margin-right: 0;
+                margin-left: 0; 
+            }
+        }
+    }   
+ 
+    .inner-banner {
+        position: relative;
+        height: 560px;
+        color: #fff;
+        background: linear-gradient(180deg, #310E82 0%, #190742 100%);
+
+        @media only screen and (max-width: 991px) and (min-width: 491px)  {
+            height: 475px; 
+        } 
+        
+        @media (max-width: 490px) {
+           height: 685px;  
+        }
+
+        .bg-img-container {
+            position: absolute;
+            right: -10%;
+            height: 100%;
+            width: 500px;
+            opacity: .14;
+
+            img {
+                margin-top: 20px; 
+                height: 100%; 
+            }
+        }
+
+        .badge {
+            background: #5E25E3;
+            border-radius: 40px;
+            padding: 15px 25px;
+            font-weight: normal;
+            font-size: 18px;
+
+            .icon {
+                margin-right: 10px;
+            }
+        }
+
+        .title {
+            color: #fff;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 64px;
+            margin-bottom: 42px;
+        }
+
+        .breadcrumb-wrapper {
+            color: #fff;
+        }
+
+        .cta-panel { 
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 50px;
+            justify-content: flex-end;
+
+            .cta-wrapper {
+                text-align: right;
+            }
+
+            .price {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 18px;
+            }
+        }
+
+        
+
+        .stats {  
+
+            small {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: #717580;
+            }
+ 
+            .text-value {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                color: #3E3F42;
+                padding: 15px 0 0; 
+            }
+ 
+            .ico-range {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                margin-bottom: 10px;
+            }
+        }
+
+        .stats-wrapper {
+            .card {
+                padding: 24px;
+                height: 145px;
+            }  
+
+            .date-range-wrapper { 
+                .text-value {
+                    margin-top:20px;
+                }
+            }
+        }
+
+        .stats-menu {
+            .card {
+                padding:20px;
+                margin-top:30px; 
+                flex-direction: inherit; 
+                color: #3E3F42;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                align-items: center;
+
+                .icon {
+                    margin-right: 10px
+                }
+            }
+        }
+
+
+        @media only screen and (max-width: 991px) and (min-width: 491px)  {
+            .title {
+                font-size: 33px; 
+                line-height: 45px;
+                margin-bottom: 20px;
+            } 
+
+            .course-detailed .inner-banner .badge {
+                padding: 10px 20px;
+            }
+
+            .cta-panel {
+                margin-bottom: 20px;
+            }
+
+            .stats-wrapper {
+                .card {
+                    padding: 15px; 
+                    height: 135px;
+                }  
+                
+                .text-value {
+                    font-size: 14px;
+                    line-height: 18px;  
+                }
+                .date-range-wrapper { 
+                    .col {
+                        padding-right: 0; 
+                    }
+
+                    .ico-range {
+                        padding-right: 5px;
+                        padding-left: 5px; 
+                    }
+
+                    .text-value {
+                        font-size: 14px;
+                        line-height: 18px; 
+                        margin-top: 10px;  
+                    }
+                }
+            }
+
+            .stats-menu {
+                .card {
+                    padding:15px;
+                    margin-top:15px;  
+                    min-height: 70px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        @media (max-width: 490px) {
+            .title {
+                font-size: 33px; 
+                line-height: 45px;
+                margin-bottom: 0; 
+            } 
+
+            .cta-panel {
+                margin-bottom: 20px;
+
+                .cta-wrapper {
+                    width: 100%; 
+                }
+            }
+
+            .stats-wrapper {
+                .card {
+                    padding: 15px; 
+                    height: 90px;
+                    margin-bottom: 15px; 
+                }  
+
+                .text-value {
+                    font-size: 14px;
+                    line-height: 18px;  
+                    margin-top: 10px  !important; 
+                    padding-top: 0;  
+                }
+            } 
+
+            .stats-menu {
+                .card {
+                    padding:15px;
+                    margin-top:15px;  
+                    min-height: 70px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            .badge {
+                padding: 10px 14px; 
+            }
+        } 
+    }
+
+    .sub-title {
+        margin: 30px 0 18px 0; 
+    }
+
+    .sidepanel { 
+        a {
+            font-weight: bold;
+        }
+
+        ul {
+            margin: 0;  
+            padding: 0 15px;
+
+            li {
+                padding: 5px 0;
+               
+                label, 
+                &:hover { 
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+            border-radius: 5px;
+            padding: 20px 15px;
+        }
+    }
+
+    .link-center-right {
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-end; 
+    }    
+
+    .btn-link {
+        color: $app-primary; 
+        font-weight: bold;
+
+        a {
+            color: $app-primary; 
+        }
+    }
+
+    .price-section,
+    .cta-section {
+        font-size: 24px;
+        font-weight: 500; 
+        display: flex; 
+        align-items: center;
+    }
+  
+    .cta-section {
+        justify-content: flex-end; 
+
+        .btn {
+            margin-bottom: 0
+        }
+    }
+
+    /** FORMS **/
+    .sort-input {
+        width: 190px;
+    }
+}
+
+
+/** Carousel Section **/
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+.carousel-section { 
+    background: #E1E2E6; 
+    padding: 10px 0 0; 
+
+    .container {
+        padding: 0;
+    }
+
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        top: -20px
+    } 
+
+    .carousel-control-prev {
+        justify-content: flex-start;
+        left: -10px;
+    }
+
+    .carousel-control-next {
+        justify-content: flex-end;
+    }
+
+    .control-btn {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 48px;
+        width: 48px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;  
+        color: #5E25E3;
+
+        i {
+            font-size: 1.3rem; 
+        }
+    }
+ 
+    .carousel-inner .carousel-item {
+        height: 190px;  
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .item-box {
+            margin-bottom: 10px;  
+            transition: 0.2s; 
+        } 
+
+        &:hover {
+            border-bottom: 4px solid $app-primary;  
+            
+            .item-box {
+                top: -6px;
+                animation-duration: 7s;  
+                margin-bottom: 10px;  
+                transition: 0.2s;
+            }
+            
+        } 
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        /* Show 4th slide on md if col-md-4*/
+        .carousel-inner .active.col-md-3.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute; 
+            top: 0;
+            right: -33.3333%;  /*change this with javascript in the future*/
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+    }
+    @media (min-width: 576px) and (max-width: 768px) {
+        /* Show 3rd slide on sm if col-sm-6*/
+        .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -50%;  /*change this with javascript in the future*/
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+    }
+    @media (min-width: 576px) {
+        .carousel-item {
+            margin-right: 0;
+        }
+        /* show 2 items */
+        .carousel-inner .active + .carousel-item {
+            display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+            transition: none;
+        }
+        .carousel-inner .carousel-item-next {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+        /* left or forward direction */
+        .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        /* farthest right hidden item must be also positioned for animations */
+        .carousel-inner .carousel-item-prev.carousel-item-right {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+        /* right or prev direction */
+        .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+    } 
+    /* MD */
+    @media (min-width: 768px) {
+        /* show 3rd of 3 item slide */
+        .carousel-inner .active + .carousel-item + .carousel-item {
+            display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+            transition: none;
+        }
+        .carousel-inner .carousel-item-next {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+        /* left or forward direction */
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        /* right or prev direction */
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+    }
+    /* LG */
+    @media (min-width: 991px) {
+        /* show 4th item */
+        .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+            display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+            transition: none;
+        }
+        /* Show 5th slide on lg if col-lg-3 */
+        .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -25%;  /*change this with javascript in the future*/
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+        /* left or forward direction */
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        /* right or prev direction //t - previous slide direction last item animation fix */
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+    } 
+}
+

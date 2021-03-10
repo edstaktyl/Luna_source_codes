@@ -1,0 +1,6 @@
+.inner-page.contactus .wrapper {
+  background: #F9FDFF;
+  min-height: calc(100% - 290px); }
+  @media (max-width: 490px) {
+    .inner-page.contactus .wrapper {
+      height: auto; } }

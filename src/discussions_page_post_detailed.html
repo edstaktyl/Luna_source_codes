@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="assets/css/rSlider.min.css">
+    <link rel="stylesheet" href="assets/css/app-theme.css" />
+    <link rel="stylesheet" href="assets/css/discussion.css" /> 
+
+    <title>Luna Academy</title>
+
+    </head>
+
+    <body class="inner-page home-logged discussion-page">
+        <main class="wrapper">
+            <!-- Header -->
+            <header>
+                <div class="header">
+                    <div class="container">
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-expand-lg navbar-dark">    
+                        <div class="navbar-brand">
+                            <a href="#"><img src="assets/img/LUNA_logo.png" alt="Luna Academy Logo" class="img-fluid logo"></a>  
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                        </button>
+    
+                        <div id="NavMenu" class="overlay NavMenu">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <!-- Dropdown menu -->
+                                <div class="collapse navbar-collapse logged" id="navbarNavAltMarkup">
+                                    <div class="nav-buttons nav-left">   
+                                        <span class="link">Library</span>
+                                        <span class="link">Courses</span>
+                                        <span class="link active">Discussions</span>
+                                        <span class="link">Progress</span> 
+                                    </div> 
+
+                                    <div class="nav-buttons">  
+                                        <span class="link">Browse courses</span>
+                                        <span class="link icon"><i class="fa fa-shopping-cart"></i></span>
+                                        <span class="link">My account</span>
+                                        <span class="line"></span>
+                                        <span class="link link-light">Log out</span> 
+                                    </div> 
+                                </div>
+                                <!-- Dropdown menu -->
+                            </div>
+                        </div>
+                    </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+ 
+            <!-- Page Content -->
+            <section class="discussion-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 class="title">Discussions</h3> 
+                        </div>
+                        <div class="col-md-4 link-center-right">
+                            <div class="btn btn-secondary">Add new post</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Sidepanel -->
+                        <div class="col-md-4 sidepanel">
+                            <div class="card"> 
+                                <div class="back-wrapper"> 
+                                    <a href="#"><i class="fa fa-chevron-left icon"></i> Back to All Posts</a>
+                                </div>
+
+                                <div class="code-wrap">
+                                    <div class="md-form md-outline form-lg">
+                                        <select class="browser-default custom-select form-control form-control-lg">
+                                            <option value="" disabled selected>Code error</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 1</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            Filter by
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownFilterby" data-toggle="dropdown" aria-expanded="false">
+                                                    Show all
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownFilterby">
+                                                  <li><a class="dropdown-item" href="#">Lorem</a></li>
+                                                  <li><a class="dropdown-item" href="#">ipsum</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            Sort by
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownSortby" data-toggle="dropdown" aria-expanded="false">
+                                                  Recent
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownSortby">
+                                                  <li><a class="dropdown-item" href="#">Lorem</a></li>
+                                                  <li><a class="dropdown-item" href="#">ipsum</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                               <div class="post-info">3 posts available</div>
+
+                                <ul class="list-group post-list">
+                                    <li class="list-group-item active">
+                                        <div class="post-wrapper">
+                                            <div>
+                                                <div><i class="material-icons icon-notif icon">mode_comment</i> I have syntax error</div>
+                                                <i class="material-icons icon favorite active">star</i>
+                                            </div>
+                                            <div class="post-description">
+                                                <div>Lorem ipsum</div>
+                                                <span class="badge badge-text rounded-pill">2 replies</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="post-wrapper">
+                                            <div>
+                                                <div><i class="material-icons icon-notif icon">help</i> Help! Code error!</div>
+                                                <i class="material-icons icon favorite">star_border</i>
+                                            </div>
+                                            <div class="post-description">
+                                                <div>Lorem ipsum</div>
+                                                <span class="badge badge-text rounded-pill">1 reply</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="post-wrapper">
+                                            <div>
+                                                <div><i class="material-icons icon-notif icon">help</i> Cannot connect with environment</div>
+                                                <i class="material-icons icon favorite">star_border</i> 
+                                            </div>
+                                            <div class="post-description">
+                                                <div>Lorem ipsum</div>
+                                                <span class="badge badge-text rounded-pill">0 reply</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div><!-- /Sidepanel -->
+
+                        <div class="col-md-8 main-content">
+                            <div class="card">
+                               <div class="row card-top"> 
+                                   <div class="col-md-9 text-wrap">
+                                        <i class="material-icons icon">mode_comment</i> 
+                                        <div class="card-top-title">I have syntax error</div>
+                                   </div>
+                                   <div class="col-md-3 icon-wrap">
+                                        <i class="material-icons icon favorite active">star</i>
+                                        
+                                        <div class="dropdown icon-more">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMore" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="material-icons icon">more_vert</i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMore">
+                                              <li><a class="dropdown-item" href="#">Edit post</a></li>
+                                              <li><a class="dropdown-item" href="#">Delete post</a></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                               </div>
+                                
+                                <div class="info-text">
+                                    2 replies
+                                </div>
+    
+                                <div class="comment-wrapper">
+                                    <ul class="list-unstyled post-commnets">
+                                        <li>
+                                            <div class="post-item">
+                                                <div class="avatar-wrapper md"><img src="assets/img/post-avatar.png" alt="User Avatar" class="img-fluid avatar"></div>
+                                                <div class="post-text-wrapper">
+                                                    <div class="post-bio">
+                                                        <div>NerdyStudent · <span>a minute ago</span></div>
+                                                        <div class="dropdown icon-more">
+                                                            <button class="dropdown-toggle" type="button" id="dropdownMore" data-toggle="dropdown" aria-expanded="false">
+                                                                <i class="material-icons icon">more_vert</i>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMore">
+                                                              <li><a class="dropdown-item" href="#">Edit post</a></li>
+                                                              <li><a class="dropdown-item" href="#">Delete post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-reply">
+                                                <div class="avatar-wrapper sm"><img src="assets/img/post-avatar.png" alt="User Avatar" class="img-fluid avatar"></div>
+                                                <div class="post-text-wrapper">
+                                                    <div class="post-bio">
+                                                        <div>GeeksAreCool · <span>8h</span></div>
+                                                        <div class="dropdown icon-more">
+                                                            <button class="dropdown-toggle" type="button" id="dropdownMore" data-toggle="dropdown" aria-expanded="false">
+                                                                <i class="material-icons icon">more_vert</i>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMore">
+                                                              <li><a class="dropdown-item" href="#">Edit post</a></li>
+                                                              <li><a class="dropdown-item" href="#">Delete post</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div>
+                                
+                                <hr>
+
+                                <h5 class="sub-title mt20">Add a comment or response</h5>
+                                <p>To protect your privacy, Don’t include personal information like your name, email or passowrd.</p>
+
+                                <div class="editor-container">
+                                    <img src="assets/img/editor.png" alt="Rich Text Editor" class="img-fluid img-editor">
+                                </div>
+                                <div class="info-text">
+                                    500 character limit
+                                </div>
+                                <div class="btn-container align-right">
+                                    <div class="btn btn-default">Cancel</div>
+                                    <div class="btn btn-primary">Submit</div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- /Page Content -->
+        </main>
+
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <!-- MDB-->
+        <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>
